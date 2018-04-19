@@ -1,0 +1,41 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto e511bf369e25450ab78ca9f7c5b280e8 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot DC_behav xil_defaultlib.DC -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal t [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Memory.vhd:25]
+WARNING: [VRFC 10-1625] value in initialization depends on signal t [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/regF.vhd:18]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.Decoder [decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.NextState [nextstate_default]
+Compiling architecture behavioral of entity xil_defaultlib.Actrl [actrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.Bctrl [bctrl_default]
+Compiling architecture behavioral of entity xil_defaultlib.MainControl [maincontrol_default]
+Compiling architecture behavioral of entity xil_defaultlib.Controller [controller_default]
+Compiling architecture behav of entity xil_defaultlib.writer [writer_default]
+Compiling architecture behav of entity xil_defaultlib.mux_2_1 [mux_2_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.PMpath [pmpath_default]
+Compiling architecture behav of entity xil_defaultlib.mux_3_1 [mux_3_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Memory [memory_default]
+Compiling architecture behav of entity xil_defaultlib.mux_2_1_4bit [mux_2_1_4bit_default]
+Compiling architecture behav of entity xil_defaultlib.mux_3_1_4bit [mux_3_1_4bit_default]
+Compiling architecture behav of entity xil_defaultlib.mux_4_1_4bit [mux_4_1_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.regF [regf_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplier [multiplier_default]
+Compiling architecture behav of entity xil_defaultlib.mux_4_1_5bit [mux_4_1_5bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Shifter [shifter_default]
+Compiling architecture behav of entity xil_defaultlib.mux_5_1 [mux_5_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behav of entity xil_defaultlib.writer_4bit [writer_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.dc
+Built simulation snapshot DC_behav

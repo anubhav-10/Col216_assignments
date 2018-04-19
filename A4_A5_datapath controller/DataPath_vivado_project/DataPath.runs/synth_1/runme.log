@@ -1,0 +1,737 @@
+
+*** Running vivado
+    with args -log DC.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DC.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source DC.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+Command: synth_design -top DC -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11003 
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1066.988 ; gain = 135.086 ; free physical = 410 ; free virtual = 12469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DC' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/D+C.vhd:16]
+INFO: [Synth 8-3491] module 'Controller' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Controller.vhd:5' bound to instance 'Ctrl' of component 'Controller' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/D+C.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'Controller' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Controller.vhd:45]
+INFO: [Synth 8-3491] module 'Decoder' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Decoder.vhd:5' bound to instance 'Decode' of component 'Decoder' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Controller.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Decoder.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (1#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Decoder.vhd:22]
+INFO: [Synth 8-3491] module 'NextState' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/NextState.vhd:5' bound to instance 'States' of component 'NextState' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Controller.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'NextState' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/NextState.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'NextState' (2#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/NextState.vhd:15]
+INFO: [Synth 8-3491] module 'Actrl' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Actrl.vhd:5' bound to instance 'Acontrol' of component 'Actrl' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Controller.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'Actrl' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Actrl.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Actrl' (3#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Actrl.vhd:40]
+INFO: [Synth 8-3491] module 'Bctrl' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Bctrl.vhd:5' bound to instance 'Bcontrol' of component 'Bctrl' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Controller.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'Bctrl' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Bctrl.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Bctrl' (4#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Bctrl.vhd:14]
+INFO: [Synth 8-3491] module 'MainControl' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:5' bound to instance 'MC' of component 'MainControl' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Controller.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'MainControl' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'MainControl' (5#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (6#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Controller.vhd:45]
+INFO: [Synth 8-3491] module 'Datapath' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:7' bound to instance 'DP' of component 'Datapath' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/D+C.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Datapath' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:43]
+INFO: [Synth 8-3491] module 'writer' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'PC_write' of component 'writer' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'writer' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'writer' (7#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:11]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:4' bound to instance 'IORD_mux' of component 'mux_2_1' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'mux_2_1' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_1' (8#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:11]
+INFO: [Synth 8-3491] module 'PMpath' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/PMpath.vhd:7' bound to instance 'PMP' of component 'PMpath' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'PMpath' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/PMpath.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'PMpath' (9#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/PMpath.vhd:18]
+INFO: [Synth 8-3491] module 'mux_3_1' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_3_1.vhd:4' bound to instance 'M2r_mux' of component 'mux_3_1' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'mux_3_1' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_3_1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_3_1' (10#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_3_1.vhd:11]
+INFO: [Synth 8-3491] module 'BRAM_wrapper' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/hdl/BRAM_wrapper.vhd:14' bound to instance 'BRM' of component 'BRAM_wrapper' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:251]
+INFO: [Synth 8-638] synthesizing module 'BRAM_wrapper' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/hdl/BRAM_wrapper.vhd:26]
+INFO: [Synth 8-3491] module 'BRAM' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/bd/BRAM/hdl/BRAM.vhd:14' bound to instance 'BRAM_i' of component 'BRAM' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/hdl/BRAM_wrapper.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'BRAM' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/bd/BRAM/hdl/BRAM.vhd:30]
+INFO: [Synth 8-3491] module 'BRAM_blk_mem_gen_0_0' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1/.Xil/Vivado-10994-kali/realtime/BRAM_blk_mem_gen_0_0_stub.vhdl:5' bound to instance 'blk_mem_gen_0' of component 'BRAM_blk_mem_gen_0_0' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/bd/BRAM/hdl/BRAM.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'BRAM_blk_mem_gen_0_0' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1/.Xil/Vivado-10994-kali/realtime/BRAM_blk_mem_gen_0_0_stub.vhdl:18]
+INFO: [Synth 8-256] done synthesizing module 'BRAM' (11#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/bd/BRAM/hdl/BRAM.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_wrapper' (12#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/hdl/BRAM_wrapper.vhd:26]
+INFO: [Synth 8-3491] module 'writer' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'IR_write' of component 'writer' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:253]
+INFO: [Synth 8-3491] module 'writer' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'DR_write' of component 'writer' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:254]
+INFO: [Synth 8-3491] module 'mux_2_1_4bit' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd:4' bound to instance 'Rsrc1_mux' of component 'mux_2_1_4bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'mux_2_1_4bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_1_4bit' (13#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd:11]
+INFO: [Synth 8-3491] module 'mux_3_1_4bit' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd:4' bound to instance 'Rsrc2_mux' of component 'mux_3_1_4bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'mux_3_1_4bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_3_1_4bit' (14#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd:11]
+INFO: [Synth 8-3491] module 'mux_4_1_4bit' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_4_1_4bit.vhd:4' bound to instance 'Wsrc_mux' of component 'mux_4_1_4bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'mux_4_1_4bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_4_1_4bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_1_4bit' (15#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_4_1_4bit.vhd:11]
+INFO: [Synth 8-3491] module 'regF' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/regF.vhd:5' bound to instance 'Reg' of component 'regF' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:261]
+INFO: [Synth 8-638] synthesizing module 'regF' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/regF.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'regF' (16#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/regF.vhd:14]
+INFO: [Synth 8-3491] module 'writer' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'A_write' of component 'writer' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:267]
+INFO: [Synth 8-3491] module 'writer' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'B_write' of component 'writer' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:268]
+INFO: [Synth 8-3491] module 'writer' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'C_write' of component 'writer' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:269]
+INFO: [Synth 8-3491] module 'Multiplier' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/Multiplier.vhd:7' bound to instance 'Mult' of component 'Multiplier' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'Multiplier' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/Multiplier.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Multiplier' (17#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/Multiplier.vhd:12]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:4' bound to instance 'Ssrc1_mux' of component 'mux_2_1' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:273]
+INFO: [Synth 8-3491] module 'mux_4_1_5bit' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd:4' bound to instance 'Sscr2_mux' of component 'mux_4_1_5bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:274]
+INFO: [Synth 8-638] synthesizing module 'mux_4_1_5bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_1_5bit' (18#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd:11]
+INFO: [Synth 8-3491] module 'Shifter' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd:34' bound to instance 'Shift' of component 'Shifter' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'Shifter' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd:42]
+INFO: [Synth 8-226] default block is never used [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd:50]
+INFO: [Synth 8-226] default block is never used [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd:52]
+INFO: [Synth 8-226] default block is never used [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd:153]
+INFO: [Synth 8-226] default block is never used [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd:255]
+INFO: [Synth 8-226] default block is never used [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd:355]
+INFO: [Synth 8-226] default block is never used [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd:457]
+INFO: [Synth 8-256] done synthesizing module 'Shifter' (19#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd:42]
+INFO: [Synth 8-3491] module 'writer' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'E_write' of component 'writer' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:277]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:4' bound to instance 'Asrc1_mux' of component 'mux_2_1' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:279]
+INFO: [Synth 8-3491] module 'mux_5_1' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_5_1.vhd:4' bound to instance 'Asrc2_mux' of component 'mux_5_1' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:280]
+INFO: [Synth 8-638] synthesizing module 'mux_5_1' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_5_1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_5_1' (20#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_5_1.vhd:11]
+INFO: [Synth 8-3491] module 'ALU' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/ALU.vhd:26' bound to instance 'ALUz' of component 'ALU' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:281]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/ALU.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (21#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/ALU.vhd:35]
+INFO: [Synth 8-3491] module 'writer_4bit' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/writer_4bit.vhd:4' bound to instance 'F_write' of component 'writer_4bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'writer_4bit' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/writer_4bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'writer_4bit' (22#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/writer_4bit.vhd:11]
+INFO: [Synth 8-3491] module 'writer' declared at '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'RES_write' of component 'writer' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:284]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (23#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'DC' (24#1) [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/D+C.vhd:16]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[31]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[30]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[29]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[28]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[27]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[26]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[25]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[23]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[22]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[21]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[20]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[19]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[18]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[17]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[16]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[15]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[14]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[13]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[12]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[11]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[10]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[9]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[8]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[7]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[4]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[3]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[2]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[1]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[0]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[31]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[30]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[29]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[28]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[27]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[26]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[25]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[20]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[19]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[18]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[17]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[16]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[15]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[14]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[13]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[12]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[11]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[10]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[9]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[8]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[7]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[6]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[5]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[4]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[3]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[2]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[1]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[0]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[31]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[30]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[29]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[28]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[27]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[26]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[25]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[24]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[23]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[22]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[21]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[19]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[18]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[17]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[16]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[15]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[14]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[13]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[12]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[11]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[10]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[9]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[8]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[7]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[6]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[5]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[4]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[3]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[2]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[1]
+WARNING: [Synth 8-3331] design NextState has unconnected port ins[0]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[31]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[30]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[29]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[28]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[24]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[23]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[22]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[21]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[20]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[19]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[18]
+WARNING: [Synth 8-3331] design Decoder has unconnected port ins[17]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1109.457 ; gain = 177.555 ; free physical = 362 ; free virtual = 12425
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1109.457 ; gain = 177.555 ; free physical = 360 ; free virtual = 12425
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'BRAM_blk_mem_gen_0_0' instantiated as 'DP/BRM/BRAM_i/blk_mem_gen_0' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/bd/BRAM/hdl/BRAM.vhd:57]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1/.Xil/Vivado-10994-kali/dcp/BRAM_blk_mem_gen_0_0_in_context.xdc] for cell 'DP/BRM/BRAM_i/blk_mem_gen_0'
+Finished Parsing XDC File [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1/.Xil/Vivado-10994-kali/dcp/BRAM_blk_mem_gen_0_0_in_context.xdc] for cell 'DP/BRM/BRAM_i/blk_mem_gen_0'
+Parsing XDC File [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1447.547 ; gain = 0.000 ; free physical = 200 ; free virtual = 12264
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1447.547 ; gain = 515.645 ; free physical = 205 ; free virtual = 12271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1447.547 ; gain = 515.645 ; free physical = 205 ; free virtual = 12271
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for DP/BRM/BRAM_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DP/BRM/BRAM_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1447.547 ; gain = 515.645 ; free physical = 205 ; free virtual = 12271
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "inscd" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'NextState'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "asrc2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ssrc1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ssrc1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ssrc2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_temp" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_temp" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'temp_reg' and it is trimmed from '33' to '32' bits. [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/ALU.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'inscd_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Decoder.vhd:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0000 |                             1111
+                 iSTATE0 |                             0001 |                             0000
+                 iSTATE2 |                             0010 |                             0010
+                 iSTATE1 |                             0011 |                             0001
+                 iSTATE3 |                             0100 |                             0011
+                 iSTATE4 |                             0101 |                             0100
+                 iSTATE5 |                             0110 |                             0101
+                 iSTATE7 |                             0111 |                             0111
+                 iSTATE8 |                             1000 |                             1000
+                 iSTATE9 |                             1001 |                             1001
+                iSTATE11 |                             1010 |                             1010
+                iSTATE10 |                             1011 |                             1011
+                iSTATE12 |                             1100 |                             1100
+                 iSTATE6 |                             1101 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'NextState'
+WARNING: [Synth 8-327] inferring latch for variable 'op_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Actrl.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'p_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Bctrl.vhd:20]
+WARNING: [Synth 8-327] inferring latch for variable 'pw_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:79]
+WARNING: [Synth 8-327] inferring latch for variable 'iord_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:80]
+WARNING: [Synth 8-327] inferring latch for variable 'mr_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:81]
+WARNING: [Synth 8-327] inferring latch for variable 'offset_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:220]
+WARNING: [Synth 8-327] inferring latch for variable 'opco_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:219]
+WARNING: [Synth 8-327] inferring latch for variable 'rsrc1_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:95]
+WARNING: [Synth 8-327] inferring latch for variable 'rsrc2_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:96]
+WARNING: [Synth 8-327] inferring latch for variable 'wsrc_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:189]
+WARNING: [Synth 8-327] inferring latch for variable 'm2r_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:190]
+WARNING: [Synth 8-327] inferring latch for variable 'ssrc1_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:139]
+WARNING: [Synth 8-327] inferring latch for variable 'ssrc2_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:140]
+WARNING: [Synth 8-327] inferring latch for variable 'asrc1_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:83]
+WARNING: [Synth 8-327] inferring latch for variable 'asrc2_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:84]
+WARNING: [Synth 8-327] inferring latch for variable 'fset_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:168]
+WARNING: [Synth 8-327] inferring latch for variable 'typec_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd:141]
+WARNING: [Synth 8-327] inferring latch for variable 'wr_temp_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/PMpath.vhd:32]
+WARNING: [Synth 8-327] inferring latch for variable 'toP_tmp_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/PMpath.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'toM_tmp_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/PMpath.vhd:30]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/ALU.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1447.547 ; gain = 515.645 ; free physical = 188 ; free virtual = 12255
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
+	   4 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 16    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 23    
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 8     
+	   5 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	  14 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 47    
+	   3 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 20    
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module NextState 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 1     
+Module Actrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module Bctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      1 Bit        Muxes := 1     
+Module MainControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  14 Input      1 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 10    
+	  17 Input      1 Bit        Muxes := 1     
+Module writer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux_2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PMpath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 2     
+Module mux_3_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module mux_2_1_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module mux_3_1_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module mux_4_1_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module regF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+Module Multiplier 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module mux_4_1_5bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module Shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module mux_5_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   4 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
+Module writer_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/Multiplier.vhd:15]
+DSP Report: Generating DSP Mult/t, operation Mode is: A*B.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: Generating DSP Mult/t, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: Generating DSP Mult/t, operation Mode is: A*B.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: Generating DSP Mult/t, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/rsrc1_reg) is unused and will be removed from module DC.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1447.547 ; gain = 515.645 ; free physical = 208 ; free virtual = 12275
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Datapath    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Datapath    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Datapath    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Datapath    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1467.547 ; gain = 535.645 ; free physical = 129 ; free virtual = 12196
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1467.547 ; gain = 535.645 ; free physical = 129 ; free virtual = 12196
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/offset_reg[1]) is unused and will be removed from module DC.
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/offset_reg[0]) is unused and will be removed from module DC.
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/opco_reg[2]) is unused and will be removed from module DC.
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/opco_reg[1]) is unused and will be removed from module DC.
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/rsrc2_reg[1]) is unused and will be removed from module DC.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1506.922 ; gain = 575.020 ; free physical = 172 ; free virtual = 12160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1506.922 ; gain = 575.020 ; free physical = 172 ; free virtual = 12160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1506.922 ; gain = 575.020 ; free physical = 172 ; free virtual = 12160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1506.922 ; gain = 575.020 ; free physical = 172 ; free virtual = 12160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1506.922 ; gain = 575.020 ; free physical = 172 ; free virtual = 12160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1506.922 ; gain = 575.020 ; free physical = 172 ; free virtual = 12160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1506.922 ; gain = 575.020 ; free physical = 172 ; free virtual = 12160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |BRAM_blk_mem_gen_0_0 |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |BRAM_blk_mem_gen_0_0_bbox |     1|
+|2     |BUFG                      |     1|
+|3     |CARRY4                    |    59|
+|4     |DSP48E1                   |     3|
+|5     |LUT1                      |    40|
+|6     |LUT2                      |   101|
+|7     |LUT3                      |   191|
+|8     |LUT4                      |   167|
+|9     |LUT5                      |   391|
+|10    |LUT6                      |   847|
+|11    |MUXF7                     |   129|
+|12    |MUXF8                     |    32|
+|13    |FDCE                      |    32|
+|14    |FDRE                      |   484|
+|15    |LD                        |   121|
+|16    |LDCP                      |     1|
+|17    |LDP                       |     6|
+|18    |IBUF                      |     2|
++------+--------------------------+------+
+
+Report Instance Areas: 
++------+--------------+-------------+------+
+|      |Instance      |Module       |Cells |
++------+--------------+-------------+------+
+|1     |top           |             |  2639|
+|2     |  Ctrl        |Controller   |  1086|
+|3     |    Acontrol  |Actrl        |   147|
+|4     |    Bcontrol  |Bctrl        |     1|
+|5     |    Decode    |Decoder      |    15|
+|6     |    MC        |MainControl  |   291|
+|7     |    States    |NextState    |   632|
+|8     |  DP          |Datapath     |  1519|
+|9     |    ALUz      |ALU          |    38|
+|10    |    Asrc1_mux |mux_2_1      |    32|
+|11    |    Asrc2_mux |mux_5_1      |    89|
+|12    |    BRM       |BRAM_wrapper |    32|
+|13    |      BRAM_i  |BRAM         |    32|
+|14    |    DR_write  |writer       |    32|
+|15    |    E_write   |writer_0     |    64|
+|16    |    F_write   |writer_4bit  |     4|
+|17    |    IORD_mux  |mux_2_1_1    |    32|
+|18    |    IR_write  |writer_2     |    73|
+|19    |    M2r_mux   |mux_3_1      |    32|
+|20    |    Mult      |Multiplier   |    23|
+|21    |    PC_write  |writer_3     |    32|
+|22    |    PMP       |PMpath       |    68|
+|23    |    RES_write |writer_4     |    32|
+|24    |    Reg       |regF         |   928|
+|25    |    Ssrc1_mux |mux_2_1_5    |     8|
++------+--------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1506.922 ; gain = 575.020 ; free physical = 172 ; free virtual = 12160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1506.922 ; gain = 156.840 ; free physical = 172 ; free virtual = 12160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1506.930 ; gain = 575.027 ; free physical = 172 ; free virtual = 12160
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 192 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 128 instances were transformed.
+  LD => LDCE: 121 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+  LDP => LDPE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+156 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1506.930 ; gain = 507.523 ; free physical = 174 ; free virtual = 12162
+INFO: [Common 17-1381] The checkpoint '/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1/DC.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1530.934 ; gain = 0.000 ; free physical = 169 ; free virtual = 12162
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  5 14:16:50 2018...
