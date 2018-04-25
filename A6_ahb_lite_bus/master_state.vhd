@@ -23,7 +23,7 @@ end entity;
 --1111 -> default
 architecture behav of master_state is
 
-	signal state : std_logic_vector(2 downto 0):="1111";
+	signal state : std_logic_vector(3 downto 0):="1111";
 
 begin
 	process(clk,reset)

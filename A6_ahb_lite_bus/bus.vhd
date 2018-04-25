@@ -5,7 +5,7 @@ use IEEE.NUMERIC_STD.ALL;
 entity bus is
 port(	clk,reset: in std_logic;
 		size : in std_logic_vector(3 downto 0);
-		address : in std_logic_vector(12 downto 0);
+		address : in std_logic_vector(11 downto 0);
 		data : in std_logic_vector(31 downto 0);
 		wr : in std_logic
 		out_data : out std_logic_vector(31 downto 0)
