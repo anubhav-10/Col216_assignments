@@ -18,7 +18,7 @@ architecture behav of led is
 	signal temp_data : std_logic_vector(15 downto 0);
 begin
 
-	process(state,clk,htrans,port_sel,wr,in_data)
+	process(state,clk,htrans,port_sel,hwrite,hwdata)
 	begin
 		case state is
 			when "00" => 

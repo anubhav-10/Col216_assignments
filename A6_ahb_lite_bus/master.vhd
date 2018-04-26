@@ -9,16 +9,15 @@ port(	clk, hreset : in std_logic;
 		
 		wr : in std_logic;
 		state : in std_logic_vector(3 downto 0);
-		size : in std_logic_vector(3 downto 0)
+		size : in std_logic_vector(3 downto 0);
 		address : in std_logic_vector(12 downto 0);
-		out_data : out std_logic_vector(31 downto 0);
+		in_data : in std_logic_vector(31 downto 0);
 
-		hwdata : in std_logic_vector(31 downto 0);
-
+		hwdata : out std_logic_vector(31 downto 0);
 		hwrite : out std_logic;
 		hsize : out std_logic_vector(3 downto 0);
-		haddr : out std_logic_vector(11 down to 0);
-		htrans : out std_logic(1 downto 0)
+		haddr : out std_logic_vector(11 downto 0);
+		htrans : out std_logic_vector(1 downto 0)
 );
 
 end entity; 
@@ -46,7 +45,7 @@ architecture behav of master is
 	signal temp_data : std_logic_vector(31 downto 0);
 
 begin
-	process(state,write,size,address,hrdata,hwdata)
+	process(state,wr,size,address,hrdata,in_data)
 	begin
 		case state is 
 
@@ -60,7 +59,7 @@ begin
 					addr_temp <= address;
 					trans_temp <= "10";
 					temp_write <= '1';
-					temp_data <= hwdata;
+					temp_data <= in_data;
 					size_temp <= size;
 				end if;
 
@@ -86,21 +85,21 @@ begin
 			when "0101" =>
 				trans_temp <= "00";
 				temp_ready <= '1';
-				temp_data <= hwdata;
+				temp_data <= in_data;
 			when "0110" =>
 				trans_temp <= "00";
 				temp_ready <= '1';
-				temp_data <= hwdata;
+				temp_data <= in_data;
 			when "0111" =>
 				trans_temp <= "00";
 				temp_ready <= '1';
-				temp_data <= hwdata;
+				temp_data <= in_data;
 
 		end case;
 
-		out_data <= temp_data;
+		hwdata <= temp_data;
 		hwrite <= temp_write;
-		hready <= temp_ready;
+--		hready <= temp_ready;
 		hsize <= size_temp;
 		htrans <= trans_temp;
 		haddr <= addr_temp;

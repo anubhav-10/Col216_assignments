@@ -14,6 +14,23 @@ end entity;
 
 architecture behav of bus
 
+component mux is
+port (	x1 : in std_logic_vector(31 downto 0);
+		z1 : in std_logic;
+		x2 : in std_logic_vector(31 downto 0);
+		z2 : in std_logic;
+		x3 : in std_logic_vector(31 downto 0);
+		z3 : in std_logic;
+		x4 : in std_logic_vector(31 downto 0);
+		z4 : in std_logic;
+		x5 : in std_logic_vector(31 downto 0);
+		z5 : in std_logic;
+		mem_select,port0,port1,port2,port3: in std_logic;
+		x : out std_logic_vector(31 downto 0);
+		z : out std_logic
+);
+end component;
+
 component master is
 port(	clk, hreset : in std_logic;
 		hready : in std_logic;
@@ -120,6 +137,8 @@ begin
 	mast_st : master_state port map(clk,reset,mem_sel,port0,port1,port2,port3,ms_state);
 
 	mast : master port map(clk,reset,hready,hrdata,wr,ms_state,size,address,out_data,data,hwrite,hsize,haddr,htrans);	
+
+	multi : mux port map(hrdata,hready,hrdata,hready,hrdata,hready,hrdata,hready,hrdata,hready,hrdata,hready);
 
 	mem_st : mem_state port map(clk,reset,htrans,mem_sel,memory_state);
 

@@ -10,6 +10,7 @@ port(	clk, reset : in std_logic;
 		
 		state : in std_logic_vector(2 downto 0);
 		in_data : in std_logic_vector(31 downto 0);
+		
 		addr : out std_logic_vector(11 downto 0);
 		wr : out std_logic;
 		size : out std_logic_vector(3 downto 0); 
@@ -18,8 +19,8 @@ port(	clk, reset : in std_logic;
 		hwrite : in std_logic;
 		hwdata : in std_logic_vector(31 downto 0);
 		hsize : in std_logic_vector(3 downto 0);
-		haddr : in std_logic_vector(11 down to 0);
-		htrans : in std_logic(1 downto 0)
+		haddr : in std_logic_vector(11 downto 0);
+		htrans : in std_logic_vector(1 downto 0)
 );
 
 end entity; 
@@ -53,9 +54,9 @@ begin
 				temp_write <= hwrite;
 				size_temp <= hsize;
 			when "001" =>
-				temp_hready <='0';
+				temp_ready <='0';
 			when "010" =>
-				temp_hready <='0';
+				temp_ready <='0';
 			when "011" =>
 				temp_ready <='1';
 				if(hwrite ='1') then

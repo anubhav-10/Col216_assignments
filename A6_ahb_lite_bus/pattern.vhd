@@ -23,7 +23,7 @@ begin
 	begin
 		case state is 
 			when "00" =>
-				if(htrans="00") then state<="00"
+				if(htrans="00") then state<="00";
 				elsif (port_sel='0') then state<="00";
 				else state<="01";
 				end if;

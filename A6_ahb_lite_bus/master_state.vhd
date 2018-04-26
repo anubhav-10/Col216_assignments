@@ -30,7 +30,7 @@ begin
 	begin
 		if(reset='1') then state<="0000";
 		end if;
-		if (clk='1' and clk'event) the
+		if (clk='1' and clk'event) then
 			case state is
 
 				when "1111" => state <="0000";

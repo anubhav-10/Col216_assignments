@@ -8,6 +8,7 @@ port(	clk : in std_logic;
 		htrans : in std_logic_vector(1 downto 0);
 		port_sel,hwrite : in std_logic;
 		in_data : in std_logic_vector(15 downto 0);
+		
 		hrdata : out std_logic_vector(15 downto 0)
 );
 end entity;
@@ -18,7 +19,7 @@ architecture behav of switches is
 	signal temp_data : std_logic_vector(15 downto 0);
 begin
 
-	process(state,clk,htrans,port_sel,wr,in_data)
+	process(state,clk,htrans,port_sel,hwrite,in_data)
 	begin
 		case state is
 			when "00" => 
