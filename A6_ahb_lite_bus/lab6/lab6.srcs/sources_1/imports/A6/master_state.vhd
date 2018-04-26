@@ -53,6 +53,7 @@ begin
 				when "0101" => state <="0000";
 				when "0110" => state <="0000";
 				when "0111" => state <="0000";
+                when others => state <="0000";
 
 			end case;
 		end if;

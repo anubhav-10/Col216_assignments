@@ -10,7 +10,7 @@ port(	clk, hreset : in std_logic;
 		wr : in std_logic;
 		state : in std_logic_vector(3 downto 0);
 		size : in std_logic_vector(3 downto 0);
-		address : in std_logic_vector(12 downto 0);
+		address : in std_logic_vector(11 downto 0);
 		in_data : in std_logic_vector(31 downto 0);
 
 		hwdata : out std_logic_vector(31 downto 0);
@@ -94,7 +94,8 @@ begin
 				trans_temp <= "00";
 				temp_ready <= '1';
 				temp_data <= in_data;
-
+            when others => 
+                temp_ready <= '0';
 		end case;
 
 		hwdata <= temp_data;
