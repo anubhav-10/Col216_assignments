@@ -52,78 +52,100 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../decoder.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/decoder.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../decoder.vhd"/>
+          <Attr Name="ImportTime" Val="1524735570"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../bus.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/bus.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../bus.vhd"/>
+          <Attr Name="ImportTime" Val="1524672539"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mux.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/mux.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../mux.vhd"/>
+          <Attr Name="ImportTime" Val="1524672152"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../pattern.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/pattern.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../pattern.vhd"/>
+          <Attr Name="ImportTime" Val="1524737362"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../master_state.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/master_state.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../master_state.vhd"/>
+          <Attr Name="ImportTime" Val="1524734505"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../switches.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/switches.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../switches.vhd"/>
+          <Attr Name="ImportTime" Val="1524737012"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mem_state.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/mem_state.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../mem_state.vhd"/>
+          <Attr Name="ImportTime" Val="1524735715"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../master.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/master.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../master.vhd"/>
+          <Attr Name="ImportTime" Val="1524735945"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../position.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/position.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../position.vhd"/>
+          <Attr Name="ImportTime" Val="1524739454"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mem.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/mem.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../mem.vhd"/>
+          <Attr Name="ImportTime" Val="1524736131"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../led.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/A6/led.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../led.vhd"/>
+          <Attr Name="ImportTime" Val="1524737067"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
