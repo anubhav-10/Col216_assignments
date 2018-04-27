@@ -43,5 +43,5 @@ begin
 			end case;
 		end if;
 	end process;
-
+	outState <= state;
 end behav;
