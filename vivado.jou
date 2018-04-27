@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Apr 26 21:26:53 2018
+# Process ID: 12944
+# Current directory: /root/github/Col216_assignments
+# Command line: vivado
+# Log file: /root/github/Col216_assignments/vivado.log
+# Journal file: /root/github/Col216_assignments/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /root/github/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.xpr
+launch_simulation
+launch_simulation
+set_property top switches [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+source switches.tcl
+close_sim

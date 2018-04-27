@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
-entity led is
+entity output is
 
 port(	clk : in std_logic;
 		htrans : in std_logic_vector(1 downto 0);
@@ -13,16 +13,17 @@ port(	clk : in std_logic;
         cathode : out std_logic_vector(6 downto 0);
         anode : out std_logic_vector(3 downto 0)
 );
-end entity;
+end output;
 
-architecture behav of led is
+architecture behav of output is
 
 	signal state : std_logic_vector(1 downto 0):="11";
 	signal temp_data : std_logic_vector(15 downto 0);
     signal temp_anode : std_logic_vector(3 downto 0):="1000";
-    signal num : std_logic_vector(3 downto 0);
+    signal temp_cathode : std_logic_vector(6 downto 0);
+    signal num : std_logic_vector(3 downto 0):=hwdata(15 downto 12);
 begin
-    num <= hwdata(15 downto 12);
+    --num <= hwdata(15 downto 12);
 	process(state,clk,htrans,port_sel,wr_en,hwdata)
 	begin
 	   if (clk='1' and clk'event) then

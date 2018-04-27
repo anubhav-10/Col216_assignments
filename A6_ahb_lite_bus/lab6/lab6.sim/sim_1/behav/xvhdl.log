@@ -1,8 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/btech/cs1160368/github/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/A6/bus.vhd" into library xil_defaultlib
-ERROR: [VRFC 10-1412] syntax error near bus [/home/btech/cs1160368/github/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/A6/bus.vhd:5]
-ERROR: [VRFC 10-1412] syntax error near bus [/home/btech/cs1160368/github/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/A6/bus.vhd:15]
-INFO: [VRFC 10-307] analyzing entity pattern
-ERROR: [VRFC 10-1504] unit pattern ignored due to previous errors [/home/btech/cs1160368/github/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/A6/bus.vhd:124]
-INFO: [VRFC 10-240] VHDL file /home/btech/cs1160368/github/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/A6/bus.vhd ignored due to errors
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/btech/cs1160368/github/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/A6/pattern.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity pattern
+INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/A6/output.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity output
