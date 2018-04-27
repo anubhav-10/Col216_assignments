@@ -3,7 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pa" timeStamp="Fri Apr 27 00:06:40 2018">
+=======
+<application name="pa" timeStamp="Sat Apr 28 21:41:28 2018">
+>>>>>>> 600c6c521f11431863b163337d16352dbb43015e
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="86d3199656654aa2a79f345ab3758e17" type="ProjectID"/>
 <property name="ProjectIteration" value="2" type="ProjectIteration"/>
@@ -17,9 +21,16 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
+<<<<<<< HEAD
 <property name="CloseProject" value="3" type="JavaHandler"/>
 <property name="OpenProject" value="2" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="11" type="JavaHandler"/>
+=======
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="4" type="JavaHandler"/>
+<property name="OpenProject" value="2" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="9" type="JavaHandler"/>
+>>>>>>> 600c6c521f11431863b163337d16352dbb43015e
 <property name="RunImplementation" value="1" type="JavaHandler"/>
 <property name="RunSynthesis" value="3" type="JavaHandler"/>
 <property name="ShowView" value="1" type="JavaHandler"/>
@@ -29,6 +40,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SimulationRunForTime" value="52" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
+<<<<<<< HEAD
 <property name="BaseDialog_CANCEL" value="10" type="GuiResourceData"/>
 <property name="BaseDialog_OK" value="73" type="GuiResourceData"/>
 <property name="CmdMsgDialog_MESSAGES" value="4" type="GuiResourceData"/>
@@ -39,9 +51,23 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="GettingStartedView_OPEN_PROJECT" value="2" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_OUT" value="13" type="GuiResourceData"/>
 <property name="HJFileChooserHelpers_JUMP_TO_CURRENT_WORKING_DIRECTORY" value="1" type="GuiResourceData"/>
+=======
+<property name="BaseDialog_CANCEL" value="9" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="72" type="GuiResourceData"/>
+<property name="CmdMsgDialog_MESSAGES" value="4" type="GuiResourceData"/>
+<property name="CmdMsgDialog_OK" value="8" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="23" type="GuiResourceData"/>
+<property name="FilterToolBar_SHOW_ALL" value="1" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="31" type="GuiResourceData"/>
+<property name="GettingStartedView_OPEN_PROJECT" value="3" type="GuiResourceData"/>
+<property name="GraphicalView_ZOOM_OUT" value="13" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="1" type="GuiResourceData"/>
+>>>>>>> 600c6c521f11431863b163337d16352dbb43015e
 <property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="17" type="GuiResourceData"/>
 <property name="MsgView_INFORMATION_MESSAGES" value="1" type="GuiResourceData"/>
 <property name="MsgView_STATUS_MESSAGES" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_CLOSE_PROJECT" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_SIMULATION_LIVE_BREAK" value="2" type="GuiResourceData"/>
 <property name="PACommandNames_SIMULATION_LIVE_RUN" value="52" type="GuiResourceData"/>
 <property name="PACommandNames_SIMULATION_LIVE_RUN_ALL" value="4" type="GuiResourceData"/>
@@ -49,7 +75,12 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="18" type="GuiResourceData"/>
 <property name="PAViews_CODE" value="7" type="GuiResourceData"/>
 <property name="ProgressDialog_CANCEL" value="3" type="GuiResourceData"/>
+<<<<<<< HEAD
 <property name="ProjectSettingsSimulationPanel_SELECT_TESTBENCH_TOP_MODULE" value="8" type="GuiResourceData"/>
+=======
+<property name="ProjectSettingsGadget_PRODUCT_FAMILY" value="1" type="GuiResourceData"/>
+<property name="ProjectSettingsSimulationPanel_SELECT_TESTBENCH_TOP_MODULE" value="6" type="GuiResourceData"/>
+>>>>>>> 600c6c521f11431863b163337d16352dbb43015e
 <property name="RDIViews_WAVEFORM_VIEWER" value="2" type="GuiResourceData"/>
 <property name="SelectTopModuleDialog_SELECT_TOP_MODULE" value="8" type="GuiResourceData"/>
 <property name="SimulationForceSettingsDialog_CANCEL_AFTER_TIME_OFFSET" value="1" type="GuiResourceData"/>
@@ -59,6 +90,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SimulationForceSettingsDialog_STARTING_AFTER_TIME_OFFSET" value="2" type="GuiResourceData"/>
 <property name="SimulationForceSettingsDialog_TRAILING_EDGE_VALUE" value="7" type="GuiResourceData"/>
 <property name="SimulationLiveRunForComp_SPECIFY_TIME_AND_UNITS" value="1" type="GuiResourceData"/>
+<<<<<<< HEAD
 <property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="74" type="GuiResourceData"/>
 <property name="TaskBanner_CLOSE" value="10" type="GuiResourceData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="11" type="GuiResourceData"/>
@@ -67,6 +99,17 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="GuiMode" value="20" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
 <property name="TclMode" value="15" type="TclMode"/>
+=======
+<property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="73" type="GuiResourceData"/>
+<property name="SrcChooserPanel_ADD_DIRECTORIES" value="2" type="GuiResourceData"/>
+<property name="TaskBanner_CLOSE" value="9" type="GuiResourceData"/>
+<property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="11" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="51" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="46" type="TclMode"/>
+>>>>>>> 600c6c521f11431863b163337d16352dbb43015e
 </item>
 </section>
 </application>
