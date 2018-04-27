@@ -11,7 +11,7 @@ port (
         clk : in std_logic;
 		operand : in std_logic_vector(31 downto 0);
 		addr : in std_logic_vector(8 downto 0); -- 4 kilobytes memory, i.e 2^12
-		wr_en : in std_logic;
+		mem_select,rd_en,wr_en : in std_logic;
 		result : out std_logic_vector(31 downto 0)
 	);
 end Memory2;
@@ -38,12 +38,15 @@ begin
       
 	process (clk,operand,wr_en,wd_i)
 	begin
-		if(clk='1' and clk'event and wr_en='1') then
-			memo(wd_i) <= operand;
+		if(clk='1' and clk'event and mem_select='1') then
+			if(wr_en='1') then
+			     memo(wd_i) <= operand;
+		    elsif(rd_en='1') then
+	             rd_data <= memo(rd_i);
+	        end if;
 		end if;
 	end process;
 	
-	rd_data <= memo(rd_i);
 	result <= rd_data;
 
 end Behavioral;

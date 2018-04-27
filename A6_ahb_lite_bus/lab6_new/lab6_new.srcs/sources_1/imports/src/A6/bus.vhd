@@ -59,6 +59,7 @@ port(	clk, reset : in std_logic;
 		state : in std_logic_vector(2 downto 0);
 		hwrite : in std_logic;
 		rd_en : in std_logic;
+		mem_select : in std_logic;
 		hwdata : in std_logic_vector(31 downto 0);
 		haddr : in std_logic_vector(8 downto 0);
 		
@@ -109,11 +110,11 @@ begin
 
 	master: DC port map(clk,reset,temp,hready,hwrite,rd_en,htrans,hrdata,hwdata,haddr); 
 
-	decode: decoder_bus port map(haddr,hwrite,sw_sel,led_sel); 
+	decode: decoder_bus port map(haddr,hwrite,mem_select,sw_sel,led_sel); 
 
 	memory_state: mem_state port map(clk,reset,htrans,mem_select,state);
 
-	memory: mem port map(clk,reset,state,hwrite,rd_en,hwdata,haddr,hready1,hrdata1);	
+	memory: mem port map(clk,reset,state,hwrite,rd_en,mem_select,hwdata,haddr,hready1,hrdata1);	
 
 	swit: switches port map(clk,htrans,sw_sel,rd_en,switch,hready2,hrdata2(15 downto 0));
 

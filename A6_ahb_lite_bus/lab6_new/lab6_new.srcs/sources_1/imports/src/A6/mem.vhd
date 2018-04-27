@@ -8,6 +8,7 @@ port(	clk, reset : in std_logic;
 		state : in std_logic_vector(2 downto 0);
 		hwrite : in std_logic;
 		rd_en : in std_logic;
+		mem_select : in std_logic;
 		hwdata : in std_logic_vector(31 downto 0);
 		haddr : in std_logic_vector(8 downto 0);
 		
@@ -35,7 +36,7 @@ port (
         clk : in std_logic;
 		operand : in std_logic_vector(31 downto 0);
 		addr : in std_logic_vector(8 downto 0); -- 4 kilobytes memory, i.e 2^12
-		wr_en : in std_logic;
+		mem_select,rd_en,wr_en : in std_logic;
 		result : out std_logic_vector(31 downto 0)
 	);
 end component;
@@ -47,7 +48,7 @@ end component;
 
 
 begin
-	MEM_slave : memory2 port map(clk,hwdata,haddr,hwrite,hrdata); 
+	MEM_slave : memory2 port map(clk,hwdata,haddr,mem_select,rd_en,hwrite,hrdata); 
 
 	process(state)
 	begin

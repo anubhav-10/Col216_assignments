@@ -1,4 +1,5 @@
 # compile vhdl design source files
+vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/imports/Memory.vhd"
 vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/new/writer_4bit.vhd"
 vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/writer.vhd"
 vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/new/shift.vhd"
@@ -14,7 +15,6 @@ vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/new
 vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd"
 vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_2_1.vhd"
 vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/Multiplier.vhd"
-vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/imports/Memory.vhd"
 vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/MainControl.vhd"
 vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Decoder.vhd"
 vhdl xil_defaultlib  "../../../lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Bctrl.vhd"

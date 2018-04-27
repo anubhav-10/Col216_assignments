@@ -1,4 +1,6 @@
 awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Memory
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/writer_4bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity writer_4bit
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/writer.vhd" into library xil_defaultlib
@@ -29,8 +31,6 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_
 INFO: [VRFC 10-307] analyzing entity mux_2_1
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/Multiplier.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Multiplier
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Memory.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Memory
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/MainControl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity MainControl
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Decoder.vhd" into library xil_defaultlib
@@ -64,6 +64,8 @@ INFO: [VRFC 10-307] analyzing entity decoder_bus
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/bus.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity buss
 awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Memory
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/writer_4bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity writer_4bit
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/writer.vhd" into library xil_defaultlib
@@ -94,8 +96,6 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_
 INFO: [VRFC 10-307] analyzing entity mux_2_1
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/Multiplier.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Multiplier
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Memory.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Memory
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/MainControl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity MainControl
 INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Decoder.vhd" into library xil_defaultlib
