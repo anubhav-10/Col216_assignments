@@ -30,5 +30,5 @@ architecture Behavioral of regF is
     
     rd_data1 <= registers(to_integer(rd_addr1));
     rd_data2 <= registers(to_integer(rd_addr2));
-    pc <= unsigned(registers(15));
+    pc <= unsigned(registers(0));
 end Behavioral;

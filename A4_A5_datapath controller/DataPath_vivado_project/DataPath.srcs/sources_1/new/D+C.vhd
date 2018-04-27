@@ -8,7 +8,8 @@ entity DC is
 
 port(
         clk : in std_logic;
-        reset: in std_logic
+        reset: in std_logic;
+        reg_out : out std_logic_vector(15 downto 0)
         );
         
 end entity;
@@ -46,7 +47,8 @@ port (
 		op : in std_logic_vector(3 downto 0);
 		typec : in std_logic_vector(1 downto 0); -- mode for shifter
 		ins_toC : out std_logic_vector(31 downto 0);
-		F_out : out std_logic_vector(3 downto 0)
+		F_out : out std_logic_vector(3 downto 0);
+		reg_out : out std_logic_vector(31 downto 0)
 	 );
 end component;
 
@@ -82,8 +84,8 @@ port (
 		rew : out std_logic;
 		fset : out std_logic;
 		op : out std_logic_vector(3 downto 0);
-		typec : out std_logic_vector(1 downto 0) -- mode for shifter
-		-----------------------------------------------------------------		
+		typec : out std_logic_vector(1 downto 0) -- mode for shifter;
+		-----------------------------------------------------------------	
 	);
 end component;
 
@@ -116,10 +118,13 @@ signal typec_tmp :  std_logic_vector(1 downto 0); -- mode for shifter
 
 signal ins_toC_tmp : std_logic_vector(31 downto 0);
 signal F_out_tmp : std_logic_vector(3 downto 0);
+signal reg_out_tmp : std_logic_vector(31 downto 0);
 
 begin
     
 Ctrl : Controller port map (ins_toC_tmp,clk,F_out_tmp,pw_tmp,iord_tmp,mr_tmp,mw_tmp,offset_tmp,DType_tmp,opco_tmp,iw_tmp,dw_tmp,rsrc1_tmp,rsrc2_tmp,wsrc_tmp,m2r_tmp,rw_tmp,aw_tmp,bw_tmp,cw_tmp,ew_tmp,ssrc1_tmp,ssrc2_tmp,asrc1_tmp,asrc2_tmp,rew_tmp,fset_tmp,op_tmp,typec_tmp);
-DP : Datapath port map (clk,reset,pw_tmp,iord_tmp,mr_tmp,mw_tmp,offset_tmp,DType_tmp,opco_tmp,iw_tmp,dw_tmp,rsrc1_tmp,rsrc2_tmp,wsrc_tmp,m2r_tmp,rw_tmp,aw_tmp,bw_tmp,cw_tmp,ew_tmp,ssrc1_tmp,ssrc2_tmp,asrc1_tmp,asrc2_tmp,rew_tmp,fset_tmp,op_tmp,typec_tmp,ins_toC_tmp,F_out_tmp);
+DP : Datapath port map (clk,reset,pw_tmp,iord_tmp,mr_tmp,mw_tmp,offset_tmp,DType_tmp,opco_tmp,iw_tmp,dw_tmp,rsrc1_tmp,rsrc2_tmp,wsrc_tmp,m2r_tmp,rw_tmp,aw_tmp,bw_tmp,cw_tmp,ew_tmp,ssrc1_tmp,ssrc2_tmp,asrc1_tmp,asrc2_tmp,rew_tmp,fset_tmp,op_tmp,typec_tmp,ins_toC_tmp,F_out_tmp,reg_out_tmp);
+
+reg_out <= "11" & reg_out_tmp(13 downto 0);
     
 end Behavioral;

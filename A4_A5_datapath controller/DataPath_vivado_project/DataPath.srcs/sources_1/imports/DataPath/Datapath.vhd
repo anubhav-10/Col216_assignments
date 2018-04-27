@@ -35,7 +35,8 @@ port (
 		typec : in std_logic_vector(1 downto 0); -- mode for shifter
 		-----------------------------------------------
 		ins_toC : out std_logic_vector(31 downto 0);
-		F_out : out std_logic_vector(3 downto 0)
+		F_out : out std_logic_vector(3 downto 0);
+		reg_out : out std_logic_vector(31 downto 0)
 	 );
 
 end Datapath;
@@ -89,23 +90,12 @@ end component;
 
 component Memory is 
 port (
+        clk : in std_logic;
 		operand : in std_logic_vector(31 downto 0);
-		addr : in std_logic_vector(11 downto 0); -- 4 kilobytes memory, i.e 2^12
+		addr : in std_logic_vector(8 downto 0); -- 4 kilobytes memory, i.e 2^12
 		wr_en : in std_logic;
 		result : out std_logic_vector(31 downto 0)
 	);
-end component;
-
-component BRAM_wrapper is
-  port (
-    BRAM_PORTA_addr : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    BRAM_PORTA_clk : in STD_LOGIC;
-    BRAM_PORTA_din : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    BRAM_PORTA_dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    BRAM_PORTA_en : in STD_LOGIC;
-    BRAM_PORTA_rst : in STD_LOGIC;
-    BRAM_PORTA_we : in STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
 end component;
 
 component mux_2_1 is
@@ -164,7 +154,8 @@ component writer is
 end component;
 
 component pc_writer is
-	port ( inp_val, current: in std_logic_vector(31 downto 0);
+	port ( clk : in std_logic;
+	       inp_val, current: in std_logic_vector(31 downto 0);
 		   en,reset : in std_logic;
 		   result: out std_logic_vector(31 downto 0)
 		);
@@ -196,8 +187,8 @@ signal IR, DR, A, B, C, E, RES : std_logic_vector(31 downto 0);
 signal PC : std_logic_vector(31 downto 0) := (others=> '0');
 signal F : std_logic_vector(3 downto 0); -- has the flags VCZN
 
-signal mem_in1 : std_logic_vector(31 downto 0); -- the other input being 
-
+signal mem_in1: std_logic_vector(31 downto 0); -- the other input being 
+signal mem_inf : std_logic_vector(8 downto 0);
 
 signal rad1_in,rad2_in, wad_in : std_logic_vector(3 downto 0);
 signal wd_in : std_logic_vector(31 downto 0);
@@ -250,15 +241,15 @@ asrc_in5 <= ("000000" & IR(23 downto 0) & "00") + "00000000000000000000000000000
 
 bram_en <= mr OR mw;
 
-PC_write : writer port map (alu_out,PC,pw,PC);
+PC_write : pc_writer port map (clk,alu_out,PC,pw,pc_reset,PC);
 IORD_mux : mux_2_1 port map(PC,RES,iord,mem_in1);
 
 
 PMP : PMpath port map(B,DR,DType,opco,offset,en_out,m2r_in1,BRAM_din);
 M2r_mux : mux_3_1 port map(m2r_in1,RES,PC,m2r,wd_in);
 
---BRM : BRAM_wrapper port map (mem_in1,clk,BRAM_din,dout,bram_en,pc_reset,en_out);
-MEM : memory port map (BRAM_din,mem_in1(11 downto 0),bram_en,dout);
+mem_inf <= "00" & mem_in1(8 downto 2);
+MEM : memory port map (clk,BRAM_din,mem_inf,bram_en,dout);
 
 IR_write : writer port map (dout,IR,iw,IR);
 DR_write : writer port map (dout, DR, dw, DR);
@@ -295,5 +286,6 @@ RES_write : writer port map(alu_out, RES, rew, RES);
 
 F_out <= F;
 ins_toC <= IR;
+reg_out <= PC_in;
 
 end architecture;
