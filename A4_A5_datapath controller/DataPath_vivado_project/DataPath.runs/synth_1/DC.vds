@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sat Apr 28 16:54:10 2018
-# Process ID: 12471
+# Start of session at: Sat Apr 28 18:04:44 2018
+# Process ID: 22618
 # Current directory: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.runs/synth_1
 # Command line: vivado -log DC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DC.tcl
 # Log file: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.runs/synth_1/DC.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12474 
+INFO: Helper process launched with PID 22622 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.559 ; gain = 128.098 ; free physical = 1052 ; free virtual = 12464
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.559 ; gain = 128.098 ; free physical = 1031 ; free virtual = 12176
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'DC' [/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/new/D+C.vhd:17]
 INFO: [Synth 8-3491] module 'Controller' declared at '/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Controller/Controller.vhd:5' bound to instance 'Ctrl' of component 'Controller' [/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/new/D+C.vhd:125]
@@ -309,7 +309,7 @@ WARNING: [Synth 8-3331] design Actrl has unconnected port ins[30]
 WARNING: [Synth 8-3331] design Actrl has unconnected port ins[29]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1101.027 ; gain = 170.566 ; free physical = 1008 ; free virtual = 12421
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1101.027 ; gain = 170.566 ; free physical = 987 ; free virtual = 12132
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -319,7 +319,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1101.027 ; gain = 170.566 ; free physical = 1008 ; free virtual = 12421
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1101.027 ; gain = 170.566 ; free physical = 987 ; free virtual = 12132
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -339,22 +339,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1404.676 ; gain = 0.000 ; free physical = 839 ; free virtual = 12252
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1404.676 ; gain = 0.000 ; free physical = 814 ; free virtual = 11960
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 838 ; free virtual = 12250
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 813 ; free virtual = 11958
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 838 ; free virtual = 12250
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 813 ; free virtual = 11958
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 838 ; free virtual = 12250
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 813 ; free virtual = 11958
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "inscd" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'NextState'
@@ -426,7 +426,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'toP_tmp_reg' [/home/prabhat
 WARNING: [Synth 8-327] inferring latch for variable 'toM_tmp_reg' [/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/PMpath.vhd:30]
 WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/ALU.vhd:42]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 822 ; free virtual = 12235
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 798 ; free virtual = 11943
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -732,7 +732,7 @@ WARNING: [Synth 8-3332] Sequential element (temp_reg[6]) is unused and will be r
 WARNING: [Synth 8-3332] Sequential element (temp_reg[5]) is unused and will be removed from module ALU.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 783 ; free virtual = 12196
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1404.676 ; gain = 474.215 ; free physical = 761 ; free virtual = 11906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -765,7 +765,7 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1410.676 ; gain = 480.215 ; free physical = 736 ; free virtual = 12149
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1410.676 ; gain = 480.215 ; free physical = 702 ; free virtual = 11847
 ---------------------------------------------------------------------------------
 Found timing loop:
      0: DP/IR_write/result_inferred/i_52/O (INV)
@@ -4053,7 +4053,7 @@ INFO: [Synth 8-620] skipping inversion-propagation across instance 'DP/IR_write/
 INFO: [Synth 8-620] skipping inversion-propagation across instance 'DP/IR_write/result_inferred/i_67' with timing assertions on output pin 'O'
 INFO: [Synth 8-620] skipping inversion-propagation across instance 'DP/IR_write/result_inferred/i_66' with timing assertions on output pin 'O'
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1452.895 ; gain = 522.434 ; free physical = 693 ; free virtual = 12106
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1452.895 ; gain = 522.434 ; free physical = 658 ; free virtual = 11804
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6258,7 +6258,7 @@ WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path 
 WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_3384/O[1]'
 WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through i_3384/O[0]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 683 ; free virtual = 12097
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 649 ; free virtual = 11796
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6282,7 +6282,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 683 ; free virtual = 12097
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 649 ; free virtual = 11796
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -6295,7 +6295,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 683 ; free virtual = 12097
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 649 ; free virtual = 11796
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -6346,25 +6346,25 @@ INFO: [Common 17-14] Message 'Synth 8-326' appears 100 times and further instanc
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 683 ; free virtual = 12097
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 649 ; free virtual = 11796
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 683 ; free virtual = 12097
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 649 ; free virtual = 11796
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 683 ; free virtual = 12097
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 649 ; free virtual = 11796
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 683 ; free virtual = 12097
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 649 ; free virtual = 11796
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -6427,11 +6427,11 @@ Report Instance Areas:
 |21    |    Ssrc1_mux |mux_2_1_3    |     9|
 +------+--------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 683 ; free virtual = 12097
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1460.902 ; gain = 530.441 ; free physical = 649 ; free virtual = 11796
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 731 critical warnings and 350 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1460.902 ; gain = 144.691 ; free physical = 682 ; free virtual = 12096
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1460.910 ; gain = 530.449 ; free physical = 682 ; free virtual = 12096
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1460.902 ; gain = 144.691 ; free physical = 649 ; free virtual = 11796
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1460.910 ; gain = 530.449 ; free physical = 649 ; free virtual = 11796
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -6446,7 +6446,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 261 Infos, 429 Warnings, 101 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1460.910 ; gain = 460.934 ; free physical = 684 ; free virtual = 12098
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1460.910 ; gain = 460.934 ; free physical = 622 ; free virtual = 11769
 INFO: [Common 17-1381] The checkpoint '/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.runs/synth_1/DC.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1484.914 ; gain = 0.000 ; free physical = 684 ; free virtual = 12098
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 28 16:54:55 2018...
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1484.914 ; gain = 0.000 ; free physical = 627 ; free virtual = 11774
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 28 18:05:30 2018...
