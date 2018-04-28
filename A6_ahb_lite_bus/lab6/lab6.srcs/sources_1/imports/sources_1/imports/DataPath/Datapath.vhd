@@ -36,7 +36,11 @@ port (
 		-----------------------------------------------
 		ins_toC : out std_logic_vector(31 downto 0);
 		F_out : out std_logic_vector(3 downto 0);
-		reg_out : out std_logic_vector(31 downto 0)
+		reg_out : out std_logic_vector(31 downto 0);
+		------------------------------------------------
+		rd_data : in std_logic_vector(31 downto 0);
+        wr_data : out std_logic_vector(31 downto 0);        
+        addr : out std_logic_vector(8 downto 0)
 	 );
 
 end Datapath;
@@ -252,7 +256,12 @@ mem_inf <= "00" & mem_in1(8 downto 2);
 MEM : memory port map (clk,BRAM_din,mem_inf,bram_en,dout);
 
 IR_write : writer port map (dout,IR,iw,IR);
-DR_write : writer port map (dout, DR, dw, DR);
+
+-----------------------------------------------------------------------
+DR_write : writer port map (rd_data, DR, dw, DR);  --read data into DR
+addr <= RES(8 downto 0);  -- read/write data from RES
+wr_data <= B; -- write data in mem from B
+-----------------------------------------------------------------------
 
 Rsrc1_mux : mux_2_1_4bit port map(IR(19 downto 16),IR(15 downto 12),rsrc1,rad1_in);
 Rsrc2_mux : mux_3_1_4bit port map (IR(3 downto 0),IR(11 downto 8),IR(15 downto 12), rsrc2, rad2_in);

@@ -34,9 +34,12 @@ port (
 		rew : out std_logic;
 		fset : out std_logic;
 		op : out std_logic_vector(3 downto 0);
-		typec : out std_logic_vector(1 downto 0) -- mode for shifter
+		typec : out std_logic_vector(1 downto 0); -- mode for shifter
 		-----------------------------------------------------------------
-		
+		ready : in std_logic;
+		d_wr, d_rd : out std_logic;
+		trans : out std_logic_vector(1 downto 0)
+		-----------------------------------------------------------------		
 	);
 
 end entity;
@@ -97,7 +100,10 @@ port(ins : in std_logic_vector(31 downto 0);
     asrc2 : out std_logic_vector(2 downto 0); -- multiplexer
 	rew : out std_logic;
 	fset : out std_logic;
-	typec : out std_logic_vector(1 downto 0) -- mode for shifter
+	typec : out std_logic_vector(1 downto 0); -- mode for shifter
+	
+	d_wr, d_rd : out std_logic;
+	trans : out std_logic_vector(1 downto 0)
 );
 
 end component;
@@ -107,6 +113,7 @@ component NextState is
 port(ins : in std_logic_vector(31 downto 0);
 	inscd : in std_logic_vector (2 downto 0);
 	clk : in std_logic;
+	ready : in std_logic;
 	outState : out std_logic_vector(3 downto 0)
 );
 
@@ -124,13 +131,13 @@ ins_copy <= ins;
 
 Decode : Decoder port map (ins_copy,inscd);
 
-States : NextState port map (ins_copy,inscd,clk,state);
+States : NextState port map (ins_copy,inscd,clk,ready,state);
 
 Acontrol : Actrl port map (state,ins_copy,inscd,op);
 
 Bcontrol : Bctrl port map (ins_copy(31 downto 28),flags,p);
 
-MC : MainControl port map (ins_copy,state,inscd,p,pw,iord,mr,mw,offset,Dtype,opco,iw,dw,rsrc1,rsrc2,wsrc,m2r,rw,aw,bw,cw,ew,ssrc1,ssrc2,asrc1,asrc2,rew,fset,typec);
+MC : MainControl port map (ins_copy,state,inscd,p,pw,iord,mr,mw,offset,Dtype,opco,iw,dw,rsrc1,rsrc2,wsrc,m2r,rw,aw,bw,cw,ew,ssrc1,ssrc2,asrc1,asrc2,rew,fset,typec,d_wr,d_rd,trans);
 
 
 end Behavioral;

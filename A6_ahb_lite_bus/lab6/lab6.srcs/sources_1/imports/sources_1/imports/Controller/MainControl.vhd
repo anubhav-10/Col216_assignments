@@ -33,7 +33,10 @@ port(ins : in std_logic_vector(31 downto 0);
     asrc2 : out std_logic_vector(2 downto 0); -- multiplexer
 	rew : out std_logic;
 	fset : out std_logic;
-	typec : out std_logic_vector(1 downto 0) -- mode for shifter
+	typec : out std_logic_vector(1 downto 0); -- mode for shifter
+	
+	d_wr, d_rd : out std_logic;
+	trans : out std_logic_vector(1 downto 0)
 );
 
 end entity;
@@ -90,6 +93,9 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";	
 				--------------------
 			when "0001" =>
 				rsrc1 <= '0';
@@ -104,6 +110,9 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";					
 				---------------------
 			when "0010" =>
 				rsrc1 <= '1';
@@ -118,6 +127,9 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";				
 				--------------------
 			when "0011" =>
 				rsrc2 <= "01";
@@ -131,6 +143,9 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";				
 				--------------------
 			when "0100" =>
 				ew <= '1';
@@ -161,6 +176,9 @@ begin
 				rw <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";				
 				--------------------
 			when "0101" =>
 				rew <= '1';
@@ -184,6 +202,9 @@ begin
 				elsif (inscd = "101") then
 					asrc2 <= "011";
 				end if;
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";
 				--------------------
 			when "0110" =>
 				wsrc <= "00";
@@ -199,6 +220,10 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";
+                -----------------------------				
 			when "0111" =>
 				wsrc <= "11";
 				m2r <= "01";
@@ -213,12 +238,20 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";
+                --------------------------				
 			when "1000" =>
 				iord <= '1';
-				mw <= '1';
+				mw <= '0';
 				opco <= "000";
 				offset <= "00";
-
+				
+                d_wr <= '1';
+                d_rd <= '0';
+                trans <= "10";
+                
 				mr <= '0';
 				aw <= '0';
 				bw <= '0';
@@ -229,13 +262,18 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				---------------------------
 			when "1001" =>
 				iord <= '1';
 				mr <= '1';
 				dw <= '1';
 				opco <= "001";
 				offset <= "00";
-
+                
+                d_wr <= '0';
+                d_rd <= '1';
+                trans <= "10";
+                
 				aw <= '0';
 				bw <= '0';
 				pw <= '0';
@@ -245,6 +283,19 @@ begin
 				rw <= '0';
 				ew <= '0';
 				rew <= '0';
+			-------------------------------	
+			when "1110" =>
+			    aw <= '0';
+                bw <= '0';
+                pw <= '0';
+                iw <= '0';
+                mw <= '0';
+                cw <= '0';
+                rw <= '0';
+                ew <= '0';
+                rew <= '0';
+                trans <= "00";		     
+			 -------------------------------    
 			when "1010" =>
 				wsrc <= "00";
 				m2r <= "00";
@@ -259,6 +310,10 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";				
+				-----------------------
 			when "1011" =>
 				wsrc <= "01";
 				m2r <= "10";
@@ -277,6 +332,10 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";
+                --------------------------------				
 			when "1100" =>
 				if (ins(24) = '1') then
 					pw <= '1';
@@ -295,6 +354,10 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";
+                ----------------------
 			when others => 
 				mr <= '1';
 
@@ -308,6 +371,10 @@ begin
 				ew <= '0';
 				rew <= '0';
 				dw <= '0';
+				d_wr <= '0';
+                d_rd <= '0';
+                trans <= "00";
+                -------------------------
 		end case;
 	end process;
 

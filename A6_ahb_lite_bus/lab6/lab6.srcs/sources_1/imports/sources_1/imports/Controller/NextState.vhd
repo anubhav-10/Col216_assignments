@@ -7,6 +7,7 @@ entity NextState is
 port(ins : in std_logic_vector(31 downto 0);
 	inscd : in std_logic_vector (2 downto 0);
 	clk : in std_logic;
+	ready : in std_logic; 
 	outState : out std_logic_vector(3 downto 0)
 );
 
@@ -28,6 +29,7 @@ signal state : std_logic_vector(3 downto 0) := "1111";
 -- 1010 -> M2RF
 -- 1011 -> LRupd
 -- 1100 -> PCupd
+-- 1110 -> Bus wait state
 -- 1111 -> default
 
 --------------inscd---------------
@@ -43,7 +45,7 @@ signal state : std_logic_vector(3 downto 0) := "1111";
 
 begin	
 
-	process(clk,inscd,ins)
+	process(clk,inscd,ins,ready)
 	begin
 
 		if(clk'event and clk =
@@ -73,10 +75,19 @@ begin
 							   end if;
 
 				when "0110" => state <= "0000";
-				when "0111" => state <= "0000";
-				when "1000" => state <= "0000";
-
-				when "1001" => state <= "1010";
+				when "0111" => state <= "0000";				
+				
+				when "1000" => state <= "1110";
+				when "1001" => state <= "1110";
+				
+				when "1110" => if(ready = '0') then
+				                    state <= "1110";
+				               elsif (ins(20) = '1') then
+				                    state <= "1001";
+				               elsif (ins(20) = '0') then
+				                    state <= "1000";
+				               end if;
+				
 				when "1011" => state <= "1100";
 
 				when "1010" => state <= "0000";

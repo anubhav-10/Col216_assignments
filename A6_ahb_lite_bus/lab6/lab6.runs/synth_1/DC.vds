@@ -1,0 +1,902 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Apr 28 23:38:01 2018
+# Process ID: 6188
+# Current directory: /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.runs/synth_1
+# Command line: vivado -log DC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DC.tcl
+# Log file: /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.runs/synth_1/DC.vds
+# Journal file: /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source DC.tcl -notrace
+Command: synth_design -top DC -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6195 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1058.566 ; gain = 128.098 ; free physical = 1867 ; free virtual = 13079
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DC' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/D+C.vhd:26]
+INFO: [Synth 8-3491] module 'Controller' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Controller.vhd:5' bound to instance 'Ctrl' of component 'Controller' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/D+C.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'Controller' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Controller.vhd:48]
+INFO: [Synth 8-3491] module 'Decoder' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Decoder.vhd:5' bound to instance 'Decode' of component 'Decoder' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Controller.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'Decoder' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Decoder.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'Decoder' (1#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Decoder.vhd:22]
+INFO: [Synth 8-3491] module 'NextState' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/NextState.vhd:5' bound to instance 'States' of component 'NextState' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Controller.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'NextState' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/NextState.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'NextState' (2#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/NextState.vhd:16]
+INFO: [Synth 8-3491] module 'Actrl' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Actrl.vhd:5' bound to instance 'Acontrol' of component 'Actrl' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Controller.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'Actrl' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Actrl.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Actrl' (3#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Actrl.vhd:42]
+INFO: [Synth 8-3491] module 'Bctrl' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Bctrl.vhd:5' bound to instance 'Bcontrol' of component 'Bctrl' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Controller.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'Bctrl' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Bctrl.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Bctrl' (4#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Bctrl.vhd:14]
+INFO: [Synth 8-3491] module 'MainControl' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:5' bound to instance 'MC' of component 'MainControl' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Controller.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'MainControl' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'MainControl' (5#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'Controller' (6#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Controller.vhd:48]
+INFO: [Synth 8-3491] module 'Datapath' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:7' bound to instance 'DP' of component 'Datapath' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/D+C.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'Datapath' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:48]
+INFO: [Synth 8-3491] module 'pc_writer' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/pc_writer.vhd:4' bound to instance 'PC_write' of component 'pc_writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'pc_writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/pc_writer.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'pc_writer' (7#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/pc_writer.vhd:12]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:4' bound to instance 'IORD_mux' of component 'mux_2_1' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:249]
+INFO: [Synth 8-638] synthesizing module 'mux_2_1' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_1' (8#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:11]
+INFO: [Synth 8-3491] module 'PMpath' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/PMpath.vhd:7' bound to instance 'PMP' of component 'PMpath' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'PMpath' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/PMpath.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'PMpath' (9#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/PMpath.vhd:18]
+INFO: [Synth 8-3491] module 'mux_3_1' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/mux_3_1.vhd:4' bound to instance 'M2r_mux' of component 'mux_3_1' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:253]
+INFO: [Synth 8-638] synthesizing module 'mux_3_1' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/mux_3_1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_3_1' (10#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/mux_3_1.vhd:11]
+INFO: [Synth 8-3491] module 'Memory' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:9' bound to instance 'MEM' of component 'Memory' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'Memory' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:19]
+WARNING: [Synth 8-3848] Net memo[127] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[126] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[125] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[124] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[123] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[122] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[121] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[120] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[119] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[118] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[117] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[116] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[115] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[114] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[113] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[112] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[111] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[110] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[109] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[108] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[107] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[106] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[105] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[104] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[103] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[102] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[101] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[100] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[99] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[98] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[97] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[96] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[95] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[94] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[93] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[92] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[91] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[90] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[89] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[88] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[87] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[86] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[85] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[84] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[83] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[82] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[81] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[80] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[79] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[78] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[77] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[76] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[75] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[74] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[73] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[72] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[71] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[70] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[69] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[68] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[67] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[66] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[65] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[64] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[63] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[62] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[61] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[60] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[59] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[58] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[57] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[56] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[55] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[54] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[53] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[52] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[51] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[50] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[49] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[48] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[47] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[46] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[45] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[44] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[43] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[42] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[41] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[40] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[39] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[38] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[37] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[36] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[35] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[34] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[33] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[32] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[31] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[30] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[29] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+WARNING: [Synth 8-3848] Net memo[28] in module/entity Memory does not have driver. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:24]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'Memory' (11#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Memory.vhd:19]
+INFO: [Synth 8-3491] module 'writer' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'IR_write' of component 'writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:258]
+INFO: [Synth 8-638] synthesizing module 'writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/writer.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'writer' (12#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/writer.vhd:11]
+INFO: [Synth 8-3491] module 'writer' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'DR_write' of component 'writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:261]
+INFO: [Synth 8-3491] module 'mux_2_1_4bit' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd:4' bound to instance 'Rsrc1_mux' of component 'mux_2_1_4bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'mux_2_1_4bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_1_4bit' (13#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd:11]
+INFO: [Synth 8-3491] module 'mux_3_1_4bit' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd:4' bound to instance 'Rsrc2_mux' of component 'mux_3_1_4bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'mux_3_1_4bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_3_1_4bit' (14#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd:11]
+INFO: [Synth 8-3491] module 'mux_4_1_4bit' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/mux_4_1_4bit.vhd:4' bound to instance 'Wsrc_mux' of component 'mux_4_1_4bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:268]
+INFO: [Synth 8-638] synthesizing module 'mux_4_1_4bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/mux_4_1_4bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_1_4bit' (15#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/mux_4_1_4bit.vhd:11]
+INFO: [Synth 8-3491] module 'regF' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/regF.vhd:5' bound to instance 'Reg' of component 'regF' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:271]
+INFO: [Synth 8-638] synthesizing module 'regF' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/regF.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'regF' (16#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/regF.vhd:14]
+INFO: [Synth 8-3491] module 'writer' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'A_write' of component 'writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:277]
+INFO: [Synth 8-3491] module 'writer' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'B_write' of component 'writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:278]
+INFO: [Synth 8-3491] module 'writer' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'C_write' of component 'writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:279]
+INFO: [Synth 8-3491] module 'Multiplier' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/Multiplier.vhd:7' bound to instance 'Mult' of component 'Multiplier' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:281]
+INFO: [Synth 8-638] synthesizing module 'Multiplier' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/Multiplier.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Multiplier' (17#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/Multiplier.vhd:12]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:4' bound to instance 'Ssrc1_mux' of component 'mux_2_1' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:283]
+INFO: [Synth 8-3491] module 'mux_4_1_5bit' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd:4' bound to instance 'Sscr2_mux' of component 'mux_4_1_5bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:284]
+INFO: [Synth 8-638] synthesizing module 'mux_4_1_5bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_1_5bit' (18#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd:11]
+INFO: [Synth 8-3491] module 'Shifter' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/shift.vhd:34' bound to instance 'Shift' of component 'Shifter' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:286]
+INFO: [Synth 8-638] synthesizing module 'Shifter' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/shift.vhd:42]
+INFO: [Synth 8-226] default block is never used [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/shift.vhd:50]
+INFO: [Synth 8-226] default block is never used [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/shift.vhd:52]
+INFO: [Synth 8-226] default block is never used [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/shift.vhd:153]
+INFO: [Synth 8-226] default block is never used [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/shift.vhd:255]
+INFO: [Synth 8-226] default block is never used [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/shift.vhd:355]
+INFO: [Synth 8-226] default block is never used [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/shift.vhd:457]
+INFO: [Synth 8-256] done synthesizing module 'Shifter' (19#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/shift.vhd:42]
+INFO: [Synth 8-3491] module 'writer' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'E_write' of component 'writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:287]
+INFO: [Synth 8-3491] module 'mux_2_1' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/mux_2_1.vhd:4' bound to instance 'Asrc1_mux' of component 'mux_2_1' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:289]
+INFO: [Synth 8-3491] module 'mux_5_1' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/mux_5_1.vhd:4' bound to instance 'Asrc2_mux' of component 'mux_5_1' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'mux_5_1' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/mux_5_1.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_5_1' (20#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/mux_5_1.vhd:11]
+INFO: [Synth 8-3491] module 'ALU' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/ALU.vhd:26' bound to instance 'ALUz' of component 'ALU' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:291]
+INFO: [Synth 8-638] synthesizing module 'ALU' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/ALU.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (21#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/ALU.vhd:35]
+INFO: [Synth 8-3491] module 'writer_4bit' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/writer_4bit.vhd:4' bound to instance 'F_write' of component 'writer_4bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:292]
+INFO: [Synth 8-638] synthesizing module 'writer_4bit' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/writer_4bit.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'writer_4bit' (22#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/writer_4bit.vhd:11]
+INFO: [Synth 8-3491] module 'writer' declared at '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/writer.vhd:4' bound to instance 'RES_write' of component 'writer' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:294]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (23#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/DataPath/Datapath.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'DC' (24#1) [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/new/D+C.vhd:26]
+WARNING: [Synth 8-3917] design DC has port reg_out[15] driven by constant 1
+WARNING: [Synth 8-3917] design DC has port reg_out[14] driven by constant 1
+WARNING: [Synth 8-3331] design Memory has unconnected port clk
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[31]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[30]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[29]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[28]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[27]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[26]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[25]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[24]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[23]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[22]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[21]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[20]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[19]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[18]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[17]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[16]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[15]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[14]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[13]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[12]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[11]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[10]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[9]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[8]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[7]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[6]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[5]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[4]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[3]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[2]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[1]
+WARNING: [Synth 8-3331] design Memory has unconnected port operand[0]
+WARNING: [Synth 8-3331] design Memory has unconnected port addr[8]
+WARNING: [Synth 8-3331] design Memory has unconnected port addr[7]
+WARNING: [Synth 8-3331] design Memory has unconnected port wr_en
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[31]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[30]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[29]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[28]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[27]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[26]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[25]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[24]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[23]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[22]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[21]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[20]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[19]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[18]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[17]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[16]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[15]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[14]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[13]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[12]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[11]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[10]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[9]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[8]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[7]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[6]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[5]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[4]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[3]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[2]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[1]
+WARNING: [Synth 8-3331] design pc_writer has unconnected port current[0]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[31]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[30]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[29]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[28]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[27]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[26]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[25]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[23]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[22]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[21]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[20]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[19]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[18]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[17]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[16]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[15]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[14]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[13]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[12]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[11]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[10]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[9]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[8]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[7]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[4]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[3]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[2]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[1]
+WARNING: [Synth 8-3331] design MainControl has unconnected port ins[0]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[31]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[30]
+WARNING: [Synth 8-3331] design Actrl has unconnected port ins[29]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1101.035 ; gain = 170.566 ; free physical = 1823 ; free virtual = 13034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1101.035 ; gain = 170.566 ; free physical = 1823 ; free virtual = 13034
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1109.039 ; gain = 178.570 ; free physical = 1823 ; free virtual = 13034
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5544] ROM "inscd" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'NextState'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "asrc2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ssrc1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ssrc1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ssrc2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_temp" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wr_temp" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "registers_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'temp_reg' and it is trimmed from '33' to '32' bits. [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/ALU.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'inscd_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Decoder.vhd:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0000 |                             1111
+                 iSTATE0 |                             0001 |                             0000
+                 iSTATE2 |                             0010 |                             0010
+                 iSTATE1 |                             0011 |                             0001
+                 iSTATE3 |                             0100 |                             0011
+                 iSTATE4 |                             0101 |                             0100
+                 iSTATE5 |                             0110 |                             0101
+                 iSTATE7 |                             0111 |                             0111
+                 iSTATE9 |                             1000 |                             1001
+                iSTATE10 |                             1001 |                             1110
+                 iSTATE8 |                             1010 |                             1000
+                iSTATE11 |                             1011 |                             1011
+                iSTATE13 |                             1100 |                             1100
+                 iSTATE6 |                             1101 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'NextState'
+WARNING: [Synth 8-327] inferring latch for variable 'op_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Actrl.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'p_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/Bctrl.vhd:20]
+WARNING: [Synth 8-327] inferring latch for variable 'pw_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:82]
+WARNING: [Synth 8-327] inferring latch for variable 'iord_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:83]
+WARNING: [Synth 8-327] inferring latch for variable 'mr_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:84]
+WARNING: [Synth 8-327] inferring latch for variable 'offset_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:249]
+WARNING: [Synth 8-327] inferring latch for variable 'opco_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:248]
+WARNING: [Synth 8-327] inferring latch for variable 'dw_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:95]
+WARNING: [Synth 8-327] inferring latch for variable 'rsrc1_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:101]
+WARNING: [Synth 8-327] inferring latch for variable 'rsrc2_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:102]
+WARNING: [Synth 8-327] inferring latch for variable 'wsrc_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:210]
+WARNING: [Synth 8-327] inferring latch for variable 'm2r_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:211]
+WARNING: [Synth 8-327] inferring latch for variable 'ssrc1_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:154]
+WARNING: [Synth 8-327] inferring latch for variable 'ssrc2_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:155]
+WARNING: [Synth 8-327] inferring latch for variable 'asrc1_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:86]
+WARNING: [Synth 8-327] inferring latch for variable 'asrc2_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:87]
+WARNING: [Synth 8-327] inferring latch for variable 'fset_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:186]
+WARNING: [Synth 8-327] inferring latch for variable 'typec_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:156]
+WARNING: [Synth 8-327] inferring latch for variable 'd_wr_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Controller/MainControl.vhd:96]
+WARNING: [Synth 8-327] inferring latch for variable 'wr_temp_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/PMpath.vhd:32]
+WARNING: [Synth 8-327] inferring latch for variable 'toP_tmp_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/PMpath.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'toM_tmp_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/PMpath.vhd:30]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/ALU.vhd:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1134.062 ; gain = 203.594 ; free physical = 1799 ; free virtual = 13011
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
+	   4 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 17    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 22    
+	   4 Input     32 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	  22 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 8     
+	   5 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	  15 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 47    
+	   3 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 20    
+	  18 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module NextState 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      4 Bit        Muxes := 1     
+	  22 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 1     
+Module Actrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module Bctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      1 Bit        Muxes := 1     
+Module MainControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  15 Input      3 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  15 Input      1 Bit        Muxes := 20    
+	   2 Input      1 Bit        Muxes := 10    
+	  18 Input      1 Bit        Muxes := 1     
+Module pc_writer 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module mux_2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PMpath 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 2     
+Module mux_3_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module writer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux_2_1_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module mux_3_1_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module mux_4_1_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module regF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+Module Multiplier 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module mux_4_1_5bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module Shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module mux_5_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   4 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
+Module writer_4bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module Datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.srcs/sources_1/imports/sources_1/imports/Lab4_comp_done/Multiplier.vhd:15]
+DSP Report: Generating DSP Mult/t, operation Mode is: A*B.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: Generating DSP Mult/t, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: Generating DSP Mult/t, operation Mode is: A*B.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: Generating DSP Mult/t, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+DSP Report: operator Mult/t is absorbed into DSP Mult/t.
+WARNING: [Synth 8-3917] design DC has port reg_out[15] driven by constant 1
+WARNING: [Synth 8-3917] design DC has port reg_out[14] driven by constant 1
+WARNING: [Synth 8-3917] design DC has port trans[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'Ctrl/MC/offset_reg[0]' (LD) to 'Ctrl/MC/opco_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Ctrl/MC/offset_reg[1]' (LD) to 'Ctrl/MC/opco_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Ctrl/MC/opco_reg[1]' (LD) to 'Ctrl/MC/opco_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Ctrl/MC/opco_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Ctrl/MC/rsrc2_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/pw_reg) is unused and will be removed from module DC.
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/mr_reg) is unused and will be removed from module DC.
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/rsrc1_reg) is unused and will be removed from module DC.
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/rsrc2_reg[1]) is unused and will be removed from module DC.
+WARNING: [Synth 8-3332] Sequential element (Ctrl/MC/opco_reg[2]) is unused and will be removed from module DC.
+WARNING: [Synth 8-3332] Sequential element (wr_temp_reg[3]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (wr_temp_reg[2]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (wr_temp_reg[1]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (wr_temp_reg[0]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[31]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[30]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[29]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[28]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[27]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[26]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[25]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[24]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[23]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[22]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[21]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[20]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[19]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[18]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[17]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[16]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[15]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[14]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[13]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[12]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[11]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[10]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[9]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[8]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[7]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[6]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[5]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[4]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[3]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[2]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[1]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toP_tmp_reg[0]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[31]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[30]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[29]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[28]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[27]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[26]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[25]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[24]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[23]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[22]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[21]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[20]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[19]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[18]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[17]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[16]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[15]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[14]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[13]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[12]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[11]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[10]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[9]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[8]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[7]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[6]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[5]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[4]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[3]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[2]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[1]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (toM_tmp_reg[0]) is unused and will be removed from module PMpath.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[31]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[30]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[29]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[28]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[27]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[26]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[25]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[24]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[23]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[22]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[21]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[20]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[19]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[18]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[17]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[16]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[15]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[14]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[13]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[12]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[11]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[10]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[9]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[8]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[7]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[6]) is unused and will be removed from module ALU.
+WARNING: [Synth 8-3332] Sequential element (temp_reg[5]) is unused and will be removed from module ALU.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Datapath    | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Datapath    | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Datapath    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Datapath    | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    59|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |    46|
+|5     |LUT2    |   129|
+|6     |LUT3    |   311|
+|7     |LUT4    |   136|
+|8     |LUT5    |   351|
+|9     |LUT6    |   762|
+|10    |MUXF7   |    86|
+|11    |MUXF8   |     1|
+|12    |FDCE    |    64|
+|13    |FDRE    |   484|
+|14    |LD      |    24|
+|15    |LDCP    |     1|
+|16    |LDP     |     2|
+|17    |IBUF    |    35|
+|18    |OBUF    |    61|
++------+--------+------+
+
+Report Instance Areas: 
++------+--------------+------------+------+
+|      |Instance      |Module      |Cells |
++------+--------------+------------+------+
+|1     |top           |            |  2556|
+|2     |  Ctrl        |Controller  |  1057|
+|3     |    Acontrol  |Actrl       |   213|
+|4     |    Bcontrol  |Bctrl       |     1|
+|5     |    Decode    |Decoder     |    19|
+|6     |    MC        |MainControl |   100|
+|7     |    States    |NextState   |   724|
+|8     |  DP          |Datapath    |  1371|
+|9     |    Asrc1_mux |mux_2_1     |   101|
+|10    |    Asrc2_mux |mux_5_1     |   121|
+|11    |    DR_write  |writer      |    32|
+|12    |    E_write   |writer_0    |    70|
+|13    |    F_write   |writer_4bit |     4|
+|14    |    IR_write  |writer_1    |    79|
+|15    |    M2r_mux   |mux_3_1     |    32|
+|16    |    Mult      |Multiplier  |    23|
+|17    |    PC_write  |pc_writer   |    32|
+|18    |    RES_write |writer_2    |     5|
+|19    |    Reg       |regF        |   863|
+|20    |    Ssrc1_mux |mux_2_1_3   |     9|
++------+--------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1267.234 ; gain = 336.766 ; free physical = 1673 ; free virtual = 12885
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 479 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1267.234 ; gain = 254.664 ; free physical = 1673 ; free virtual = 12885
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1267.242 ; gain = 336.773 ; free physical = 1673 ; free virtual = 12885
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  LD => LDCE: 24 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+  LDP => LDPE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+156 Infos, 330 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1330.246 ; gain = 330.262 ; free physical = 1630 ; free virtual = 12842
+INFO: [Common 17-1381] The checkpoint '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6/lab6.runs/synth_1/DC.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1354.258 ; gain = 0.000 ; free physical = 1629 ; free virtual = 12841
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 28 23:38:25 2018...
