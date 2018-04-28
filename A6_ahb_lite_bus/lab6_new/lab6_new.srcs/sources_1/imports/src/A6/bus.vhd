@@ -86,6 +86,7 @@ port(	clk : in std_logic;
 		port_sel,wr_en : in std_logic;
 		hwdata : in std_logic_vector(15 downto 0);
 		
+		hready : out std_logic;
         out_data : out std_logic_vector(15 downto 0); -- will be mapped to leds
         cathode : out std_logic_vector(6 downto 0);
         anode : out std_logic_vector(3 downto 0)
@@ -104,7 +105,7 @@ signal mem_select,sw_sel,led_sel : std_logic;
 signal state : std_logic_vector(2 downto 0);
 
 signal hrdata1,hrdata2 : std_logic_vector(31 downto 0);
-signal hready1,hready2 : std_logic;
+signal hready1,hready2,hready3 : std_logic;
 
 begin
 
@@ -120,8 +121,8 @@ begin
 
 	multi: mux port map(hrdata1,hrdata2,mem_select,sw_sel,hrdata);
 
-	hready <= hready1 or hready2;
+	hready <= hready1 or hready2 or hready3;
 
-	outp: output port map(clk,htrans,led_sel,hwrite,hwdata(15 downto 0),led,cathode,anode);
+	outp: output port map(clk,htrans,led_sel,hwrite,hwdata(15 downto 0),hready3,led,cathode,anode);
 
 end behav;

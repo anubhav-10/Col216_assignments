@@ -39,46 +39,46 @@ INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1290.664 ; gain = 55.016 ; free physical = 511 ; free virtual = 12093
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.38 . Memory (MB): peak = 1289.660 ; gain = 54.016 ; free physical = 462 ; free virtual = 11180
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: 201bfc305
+Implement Debug Cores | Checksum: 14250a889
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 211cb7b81
+Phase 1 Retarget | Checksum: 1a5615c3a
 
-Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 165 ; free virtual = 11747
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1653.090 ; gain = 0.000 ; free physical = 128 ; free virtual = 10831
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-10] Eliminated 0 cells.
-Phase 2 Constant propagation | Checksum: 16ed3e01d
+Phase 2 Constant propagation | Checksum: 19803ff22
 
-Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 164 ; free virtual = 11746
+Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.27 . Memory (MB): peak = 1653.090 ; gain = 0.000 ; free physical = 127 ; free virtual = 10831
 
 Phase 3 Sweep
 INFO: [Opt 31-12] Eliminated 320 unconnected nets.
 INFO: [Opt 31-11] Eliminated 1 unconnected cells.
-Phase 3 Sweep | Checksum: 1a529447f
+Phase 3 Sweep | Checksum: 1ee6631cd
 
-Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.31 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 164 ; free virtual = 11746
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1653.090 ; gain = 0.000 ; free physical = 127 ; free virtual = 10831
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-12] Eliminated 0 unconnected nets.
 INFO: [Opt 31-11] Eliminated 0 unconnected cells.
-Phase 4 BUFG optimization | Checksum: 1a529447f
+Phase 4 BUFG optimization | Checksum: 1ee6631cd
 
-Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.43 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 164 ; free virtual = 11746
+Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.56 . Memory (MB): peak = 1653.090 ; gain = 0.000 ; free physical = 127 ; free virtual = 10830
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 164 ; free virtual = 11746
-Ending Logic Optimization Task | Checksum: 1a529447f
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1653.090 ; gain = 0.000 ; free physical = 127 ; free virtual = 10830
+Ending Logic Optimization Task | Checksum: 1ee6631cd
 
-Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.45 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 164 ; free virtual = 11746
+Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.58 . Memory (MB): peak = 1653.090 ; gain = 0.000 ; free physical = 127 ; free virtual = 10830
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -86,7 +86,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-INFO: [Pwropt 34-203] Number of nets are not same before and after processing of findDistanceFromSourceAndDest. Before: 902 After: 1185
+INFO: [Pwropt 34-203] Number of nets are not same before and after processing of findDistanceFromSourceAndDest. Before: 621 After: 1205
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
 
@@ -95,21 +95,21 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
-Ending PowerOpt Patch Enables Task | Checksum: 1a529447f
+Ending PowerOpt Patch Enables Task | Checksum: 1ee6631cd
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 158 ; free virtual = 11681
-Ending Power Optimization Task | Checksum: 1a529447f
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 133 ; free virtual = 10768
+Ending Power Optimization Task | Checksum: 1ee6631cd
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.75 . Memory (MB): peak = 1874.195 ; gain = 220.102 ; free physical = 158 ; free virtual = 11680
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.95 . Memory (MB): peak = 1873.199 ; gain = 220.109 ; free physical = 133 ; free virtual = 10768
 INFO: [Common 17-83] Releasing license: Implementation
 29 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1874.195 ; gain = 638.547 ; free physical = 158 ; free virtual = 11680
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1873.199 ; gain = 637.555 ; free physical = 133 ; free virtual = 10768
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 157 ; free virtual = 11680
+Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 132 ; free virtual = 10768
 INFO: [Common 17-1381] The checkpoint '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_opt.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_drc_opted.rpt.
@@ -152,87 +152,87 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 144 ; free virtual = 11667
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 144 ; free virtual = 11667
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 162 ; free virtual = 10752
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 162 ; free virtual = 10752
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f71fdb74
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 60eb5f02
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.68 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 142 ; free virtual = 11665
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.72 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 161 ; free virtual = 10751
 
 Phase 1.2 Build Placer Netlist Model
-Phase 1.2 Build Placer Netlist Model | Checksum: 1c9e18451
+Phase 1.2 Build Placer Netlist Model | Checksum: fb8901ad
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 137 ; free virtual = 11660
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 161 ; free virtual = 10751
 
 Phase 1.3 Constrain Clocks/Macros
-Phase 1.3 Constrain Clocks/Macros | Checksum: 1c9e18451
+Phase 1.3 Constrain Clocks/Macros | Checksum: fb8901ad
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 137 ; free virtual = 11660
-Phase 1 Placer Initialization | Checksum: 1c9e18451
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 161 ; free virtual = 10751
+Phase 1 Placer Initialization | Checksum: fb8901ad
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 137 ; free virtual = 11660
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 161 ; free virtual = 10751
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 14e3f76ee
+Phase 2 Global Placement | Checksum: d1ee5354
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 136 ; free virtual = 11659
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 159 ; free virtual = 10749
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 14e3f76ee
+Phase 3.1 Commit Multi Column Macros | Checksum: d1ee5354
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 136 ; free virtual = 11659
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 159 ; free virtual = 10749
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 130c26e2d
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 140462610
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 135 ; free virtual = 11659
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 159 ; free virtual = 10749
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 163c920fd
+Phase 3.3 Area Swap Optimization | Checksum: 174572295
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 135 ; free virtual = 11659
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 159 ; free virtual = 10749
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 163c920fd
+Phase 3.4 Pipeline Register Optimization | Checksum: 174572295
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 135 ; free virtual = 11659
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 159 ; free virtual = 10749
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 16f6bda0f
+Phase 3.5 Timing Path Optimizer | Checksum: 20b5dfb56
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 135 ; free virtual = 11659
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 159 ; free virtual = 10749
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 1acb76277
+Phase 3.6 Fast Optimization | Checksum: 128b9b3fa
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 135 ; free virtual = 11658
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 148 ; free virtual = 10738
 
 Phase 3.7 Small Shape Detail Placement
-Phase 3.7 Small Shape Detail Placement | Checksum: d293572e
+Phase 3.7 Small Shape Detail Placement | Checksum: d9a8e622
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 135 ; free virtual = 11658
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 147 ; free virtual = 10737
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: 13b7902b4
+Phase 3.8 Re-assign LUT pins | Checksum: 16f8fee5d
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 135 ; free virtual = 11658
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 147 ; free virtual = 10737
 
 Phase 3.9 Pipeline Register Optimization
-Phase 3.9 Pipeline Register Optimization | Checksum: 13b7902b4
+Phase 3.9 Pipeline Register Optimization | Checksum: 16f8fee5d
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 135 ; free virtual = 11658
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 147 ; free virtual = 10737
 
 Phase 3.10 Fast Optimization
-Phase 3.10 Fast Optimization | Checksum: 1782ec701
+Phase 3.10 Fast Optimization | Checksum: 16fd88e37
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11657
-Phase 3 Detail Placement | Checksum: 1782ec701
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 150 ; free virtual = 10740
+Phase 3 Detail Placement | Checksum: 16fd88e37
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11657
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 150 ; free virtual = 10740
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -240,47 +240,47 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-20.026. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 1fa2a5f7d
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-22.321. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1e8770da8
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 129 ; free virtual = 11653
-Phase 4.1 Post Commit Optimization | Checksum: 1fa2a5f7d
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 170 ; free virtual = 10666
+Phase 4.1 Post Commit Optimization | Checksum: 1e8770da8
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 129 ; free virtual = 11653
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 170 ; free virtual = 10666
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1fa2a5f7d
+Phase 4.2 Post Placement Cleanup | Checksum: 1e8770da8
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:31 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 129 ; free virtual = 11653
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 177 ; free virtual = 10673
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 1fa2a5f7d
+Phase 4.3 Placer Reporting | Checksum: 1e8770da8
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 129 ; free virtual = 11653
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 163 ; free virtual = 10675
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 266f95934
+Phase 4.4 Final Placement Cleanup | Checksum: 1e09ad2ec
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 129 ; free virtual = 11653
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 266f95934
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 162 ; free virtual = 10674
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e09ad2ec
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 129 ; free virtual = 11653
-Ending Placer Task | Checksum: 17a8bd383
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 161 ; free virtual = 10673
+Ending Placer Task | Checksum: 11d0ef2fc
 
-Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 129 ; free virtual = 11653
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 189 ; free virtual = 10672
 INFO: [Common 17-83] Releasing license: Implementation
 45 Infos, 23 Warnings, 1 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:32 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 129 ; free virtual = 11653
+place_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 189 ; free virtual = 10672
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11653
+Write XDEF Complete: Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 182 ; free virtual = 10667
 INFO: [Common 17-1381] The checkpoint '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 144 ; free virtual = 11652
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 144 ; free virtual = 11652
-report_control_sets: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 144 ; free virtual = 11652
+report_io: Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 164 ; free virtual = 10662
+report_utilization: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 163 ; free virtual = 10661
+report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 163 ; free virtual = 10661
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -292,207 +292,183 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
-Checksum: PlaceDB: faeab360 ConstDB: 0 ShapeSum: 7fa12023 RouteDB: 0
+Checksum: PlaceDB: e20bcdd1 ConstDB: 0 ShapeSum: 3b03252b RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: cb62910c
+Phase 1 Build RT Design | Checksum: 1a7e761aa
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 130 ; free virtual = 11590
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 135 ; free virtual = 10585
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: cb62910c
+Phase 2.1 Create Timer | Checksum: 1a7e761aa
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 130 ; free virtual = 11590
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 135 ; free virtual = 10585
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: cb62910c
+Phase 2.2 Fix Topology Constraints | Checksum: 1a7e761aa
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 133 ; free virtual = 11577
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 121 ; free virtual = 10571
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: cb62910c
+Phase 2.3 Pre Route Cleanup | Checksum: 1a7e761aa
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 133 ; free virtual = 11577
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 121 ; free virtual = 10571
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 19264cdf8
+Phase 2.4 Update Timing | Checksum: 152c9742d
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 131 ; free virtual = 11568
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-19.320| TNS=-14568.016| WHS=-0.100 | THS=-1.173 |
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 149 ; free virtual = 10563
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-21.598| TNS=-14543.357| WHS=-0.068 | THS=-0.960 |
 
-Phase 2 Router Initialization | Checksum: 14179af17
+Phase 2 Router Initialization | Checksum: faea66ea
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 130 ; free virtual = 11567
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 159 ; free virtual = 10573
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 8a1167b6
+Phase 3 Initial Routing | Checksum: 165ca22a3
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 157 ; free virtual = 10571
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 666
- Number of Nodes with overlaps = 75
- Number of Nodes with overlaps = 25
- Number of Nodes with overlaps = 7
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 769
+ Number of Nodes with overlaps = 68
+ Number of Nodes with overlaps = 9
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 153ae7480
+Phase 4.1.1 Update Timing | Checksum: 1076dcd47
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-21.229| TNS=-16453.961| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 157 ; free virtual = 10571
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-23.371| TNS=-16185.792| WHS=N/A    | THS=N/A    |
 
 
 Phase 4.1.2 GlobIterForTiming
 
 Phase 4.1.2.1 Update Timing
-Phase 4.1.2.1 Update Timing | Checksum: 1d3663841
+Phase 4.1.2.1 Update Timing | Checksum: 281da1e6f
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 157 ; free virtual = 10571
 
 Phase 4.1.2.2 Fast Budgeting
-Phase 4.1.2.2 Fast Budgeting | Checksum: 222951c32
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1961fd844
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-Phase 4.1.2 GlobIterForTiming | Checksum: 240be5a28
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 157 ; free virtual = 10571
+Phase 4.1.2 GlobIterForTiming | Checksum: 24f82e5e9
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-Phase 4.1 Global Iteration 0 | Checksum: 240be5a28
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 157 ; free virtual = 10571
+Phase 4.1 Global Iteration 0 | Checksum: 24f82e5e9
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 157 ; free virtual = 10571
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 98
+ Number of Nodes with overlaps = 432
+ Number of Nodes with overlaps = 137
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 43
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 13
  Number of Nodes with overlaps = 0
 
 Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: d63d7d30
+Phase 4.2.1 Update Timing | Checksum: ae0a5fb0
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-20.638| TNS=-15942.067| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 178 ; free virtual = 10592
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-22.477| TNS=-15634.910| WHS=N/A    | THS=N/A    |
 
 
 Phase 4.2.2 GlobIterForTiming
 
 Phase 4.2.2.1 Update Timing
-Phase 4.2.2.1 Update Timing | Checksum: 236849f16
+Phase 4.2.2.1 Update Timing | Checksum: 21f4ea7a2
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 177 ; free virtual = 10592
 
 Phase 4.2.2.2 Fast Budgeting
-Phase 4.2.2.2 Fast Budgeting | Checksum: 27d668b21
+Phase 4.2.2.2 Fast Budgeting | Checksum: 1fde5d6ba
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-Phase 4.2.2 GlobIterForTiming | Checksum: a15c743a
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 177 ; free virtual = 10592
+Phase 4.2.2 GlobIterForTiming | Checksum: 22a480f07
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-Phase 4.2 Global Iteration 1 | Checksum: a15c743a
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 177 ; free virtual = 10592
+Phase 4.2 Global Iteration 1 | Checksum: 22a480f07
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 177 ; free virtual = 10592
 
 Phase 4.3 Global Iteration 2
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 125
+ Number of Nodes with overlaps = 52
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
 
 Phase 4.3.1 Update Timing
-Phase 4.3.1 Update Timing | Checksum: 1c38e446a
+Phase 4.3.1 Update Timing | Checksum: 19326b53e
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-20.308| TNS=-15860.856| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 259 ; free virtual = 10673
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-22.392| TNS=-15797.296| WHS=N/A    | THS=N/A    |
 
+Phase 4.3 Global Iteration 2 | Checksum: a8e8507c
 
-Phase 4.3.2 GlobIterForTiming
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 259 ; free virtual = 10673
+Phase 4 Rip-up And Reroute | Checksum: a8e8507c
 
-Phase 4.3.2.1 Update Timing
-Phase 4.3.2.1 Update Timing | Checksum: 16a8c7fbe
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-
-Phase 4.3.2.2 Fast Budgeting
-Phase 4.3.2.2 Fast Budgeting | Checksum: 11ed2cd43
-
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-Phase 4.3.2 GlobIterForTiming | Checksum: 117bb53d8
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-Phase 4.3 Global Iteration 2 | Checksum: 117bb53d8
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-
-Phase 4.4 Global Iteration 3
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 0
-
-Phase 4.4.1 Update Timing
-Phase 4.4.1 Update Timing | Checksum: 15ddd7d27
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-20.171| TNS=-15839.556| WHS=N/A    | THS=N/A    |
-
-Phase 4.4 Global Iteration 3 | Checksum: 1a4034996
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-Phase 4 Rip-up And Reroute | Checksum: 1a4034996
-
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:23 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 259 ; free virtual = 10673
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 156d147e0
+Phase 5.1.1 Update Timing | Checksum: 101c27310
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 127 ; free virtual = 11563
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-20.092| TNS=-15751.396| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 259 ; free virtual = 10673
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-22.313| TNS=-15708.083| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 20ba2b8c5
+Phase 5.1 Delay CleanUp | Checksum: 1640de90a
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11553
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 20ba2b8c5
+Phase 5.2 Clock Skew Optimization | Checksum: 1640de90a
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11553
-Phase 5 Delay and Skew Optimization | Checksum: 20ba2b8c5
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
+Phase 5 Delay and Skew Optimization | Checksum: 1640de90a
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11553
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 23e4a6d96
+Phase 6.1.1 Update Timing | Checksum: 188e19569
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11553
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-20.040| TNS=-15775.219| WHS=0.164  | THS=0.000  |
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-22.024| TNS=-15543.423| WHS=0.248  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 23e4a6d96
+Phase 6.1 Hold Fix Iter | Checksum: 188e19569
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11552
-Phase 6 Post Hold Fix | Checksum: 23e4a6d96
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
+Phase 6 Post Hold Fix | Checksum: 188e19569
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11552
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.36347 %
-  Global Horizontal Routing Utilization  = 1.55791 %
+  Global Vertical Routing Utilization    = 1.3256 %
+  Global Horizontal Routing Utilization  = 1.90109 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -502,48 +478,49 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 68.4685%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 54.0541%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 70.5882%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 70.5882%, No Congested Regions.
-Phase 7 Route finalize | Checksum: 23e2bdfbf
+North Dir 1x1 Area, Max Cong = 69.3694%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 61.2613%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 67.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 86.7647%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X38Y13 -> INT_L_X38Y13
+Phase 7 Route finalize | Checksum: 149f6baa1
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11552
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 23e2bdfbf
+Phase 8 Verifying routed nets | Checksum: 149f6baa1
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11552
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 20280a87a
+Phase 9 Depositing Routes | Checksum: 182a19331
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11552
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-20.040| TNS=-15775.219| WHS=0.164  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-22.024| TNS=-15543.423| WHS=0.248  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 20280a87a
+Phase 10 Post Router Timing | Checksum: 182a19331
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11552
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 134 ; free virtual = 11552
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:24 . Memory (MB): peak = 1873.199 ; gain = 0.000 ; free physical = 256 ; free virtual = 10670
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-61 Infos, 24 Warnings, 1 Critical Warnings and 0 Errors encountered.
+60 Infos, 24 Warnings, 1 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:18 . Memory (MB): peak = 1881.129 ; gain = 6.934 ; free physical = 134 ; free virtual = 11552
+route_design: Time (s): cpu = 00:00:52 ; elapsed = 00:00:25 . Memory (MB): peak = 1879.133 ; gain = 5.934 ; free physical = 256 ; free virtual = 10670
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1888.988 ; gain = 0.000 ; free physical = 130 ; free virtual = 11552
+Write XDEF Complete: Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1886.992 ; gain = 0.000 ; free physical = 252 ; free virtual = 10670
 INFO: [Common 17-1381] The checkpoint '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_routed.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_drc_routed.rpt.
@@ -560,7 +537,7 @@ Command: report_power -file buss_power_routed.rpt -pb buss_power_summary_routed.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-72 Infos, 24 Warnings, 2 Critical Warnings and 0 Errors encountered.
+71 Infos, 24 Warnings, 2 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 Command: write_bitstream -force -no_partial_bitfile buss.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
@@ -593,7 +570,8 @@ WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT c
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/FSM_sequential_state[1]_i_3.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/i__i_1.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/i__i_3.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/inscd_reg[0]_i_3.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/inscd_reg[0]_i_4.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/inscd_reg[0]_i_6.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/inscd_reg[2]_i_6.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/memo_reg_i_2.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/memo_reg_i_3.
@@ -627,8 +605,10 @@ WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT c
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][28]_i_4.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][29]_i_4.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][30]_i_4.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][31]_i_18.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][31]_i_14.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][9]_i_4.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/result_reg[0]_i_4.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/result_reg[2]_i_4.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t__0_i_1.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t__0_i_10.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t__0_i_11.
@@ -672,11 +652,8 @@ WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT c
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_17.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_18.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_19.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_2.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_20.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_21.
 INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 270 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 271 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 Loading data files...
 Loading site data...
@@ -688,8 +665,8 @@ Writing bitstream ./buss.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-80 Infos, 124 Warnings, 2 Critical Warnings and 0 Errors encountered.
+79 Infos, 124 Warnings, 2 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2236.672 ; gain = 275.629 ; free physical = 149 ; free virtual = 11215
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2238.684 ; gain = 285.629 ; free physical = 156 ; free virtual = 10230
 INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file buss.hwdef
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 29 13:24:56 2018...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 29 15:41:25 2018...
