@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524988363">
+  <File Type="RDS-PROPCONSTRS" Name="buss_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="buss_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="buss.vds"/>
+  <File Type="VDS-TIMING-PB" Name="buss_timing_summary_synth.pb"/>
+  <File Type="PA-TCL" Name="buss.tcl"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="buss_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="buss.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="buss_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Memory.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Memory.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/new/writer_4bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/new/writer_4bit.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4_comp_done/writer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4_comp_done/writer.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/new/shift.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/new/shift.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4_comp_done/regF.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4_comp_done/regF.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4_comp_done/PMpath.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4_comp_done/PMpath.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/new/pc_writer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/new/pc_writer.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Controller/NextState.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Controller/NextState.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/new/mux_5_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/new/mux_5_1.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/new/mux_4_1_4bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/new/mux_4_1_4bit.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/new/mux_3_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/new/mux_3_1.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_2_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4_comp_done/mux_2_1.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4_comp_done/Multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4_comp_done/Multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Controller/MainControl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Controller/MainControl.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Controller/Decoder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Controller/Decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Controller/Bctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Controller/Bctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4_comp_done/ALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4_comp_done/ALU.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Controller/Actrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Controller/Actrl.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/A6/memory2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/DataPath/Datapath.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/DataPath/Datapath.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Controller/Controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Controller/Controller.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/A6/output.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/A6/output.vhd"/>
+        <Attr Name="ImportTime" Val="1524850359"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/A6/mux.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/A6/mux.vhd"/>
+        <Attr Name="ImportTime" Val="1524847189"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/A6/switches.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/A6/switches.vhd"/>
+        <Attr Name="ImportTime" Val="1524849174"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/A6/mem_state.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/A6/mem_state.vhd"/>
+        <Attr Name="ImportTime" Val="1524735715"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/A6/mem.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/A6/mem.vhd"/>
+        <Attr Name="ImportTime" Val="1524851199"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/new/D+C.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/new/D+C.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/A6/decoder_bus.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/A6/bus.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/A6/bus.vhd"/>
+        <Attr Name="ImportTime" Val="1524672539"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/sources_1/imports/Lab4/lab4.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Lab4/lab4.vhd"/>
+        <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="buss"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/lab6.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
