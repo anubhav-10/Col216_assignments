@@ -41,12 +41,9 @@ begin
 --    memo(1) <= "00000000";
 --    memo(3) <= "00000100";        
       
-	process (clk,wd_i,wr_en,operand)
+	process (operand)
 	begin
 	memo(0) <= "11100011101000000000000000000100";
-		if(wr_en = '1' and clk = '1' and clk'event) then
-			memo(wd_i) <= operand;
-		end if;
 	end process;
 	
 	rd_data <= memo(rd_i);

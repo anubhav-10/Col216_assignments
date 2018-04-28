@@ -9,50 +9,44 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.cache/wt} [current_project]
-set_property parent.project_path {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.xpr} [current_project]
-set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+set_property webtalk.parent_dir {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.cache/wt} [current_project]
+set_property parent.project_path {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.cache/ip} [current_project]
+set_property ip_output_repo {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files {{/media/root/New Volume/IITD/4th/COL 216/Lab/A5/data.coe}}
 read_vhdl -library xil_defaultlib {
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/writer_4bit.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/shift.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/regF.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/PMpath.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/NextState.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_5_1.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_4_1_4bit.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/mux_3_1.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/Multiplier.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/hdl/BRAM_wrapper.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Bctrl.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Lab4_comp_done/ALU.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Actrl.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Decoder.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/imports/Controller/Controller.vhd}
-  {/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/new/D+C.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/new/pc_writer.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Controller/NextState.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Controller/MainControl.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Controller/Decoder.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Controller/Bctrl.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Controller/Actrl.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Memory.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/new/writer_4bit.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/writer.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/new/shift.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/regF.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/PMpath.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/new/mux_5_1.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/new/mux_4_1_4bit.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/new/mux_3_1.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/mux_2_1.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/Multiplier.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Lab4_comp_done/ALU.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/Controller/Controller.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/imports/DataPath/Datapath.vhd}
+  {/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/sources_1/new/D+C.vhd}
 }
-add_files {{/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/bd/BRAM/BRAM.bd}}
-set_property used_in_implementation false [get_files -all {{/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/bd/BRAM/ip/BRAM_blk_mem_gen_0_0/BRAM_blk_mem_gen_0_0_ooc.xdc}}]
-set_property used_in_implementation false [get_files -all {{/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/bd/BRAM/BRAM_ooc.xdc}}]
-set_property is_locked true [get_files {{/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.srcs/sources_1/bd/BRAM/BRAM.bd}}]
-
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp
 }
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
+read_xdc {{/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/constrs_1/imports/A4_A5_datapath controller/lab4_5.xdc}}
+set_property used_in_implementation false [get_files {{/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.srcs/constrs_1/imports/A4_A5_datapath controller/lab4_5.xdc}}]
+
 
 synth_design -top DC -part xc7a35tcpg236-1
 

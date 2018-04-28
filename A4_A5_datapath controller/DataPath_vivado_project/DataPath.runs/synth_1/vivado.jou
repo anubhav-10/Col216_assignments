@@ -2,11 +2,11 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Thu Apr  5 14:15:59 2018
-# Process ID: 10994
-# Current directory: /media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1
+# Start of session at: Sat Apr 28 16:54:10 2018
+# Process ID: 12471
+# Current directory: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.runs/synth_1
 # Command line: vivado -log DC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DC.tcl
-# Log file: /media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1/DC.vds
-# Journal file: /media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1/vivado.jou
+# Log file: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.runs/synth_1/DC.vds
+# Journal file: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source DC.tcl -notrace

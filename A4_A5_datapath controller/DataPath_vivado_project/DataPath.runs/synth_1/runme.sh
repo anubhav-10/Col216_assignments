@@ -7,20 +7,20 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/opt/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2016.4/bin
+  PATH=/home/prabhat/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/lin64:/home/prabhat/Xilinx/Vivado/2016.4/bin
 else
-  PATH=/opt/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2016.4/bin:$PATH
+  PATH=/home/prabhat/Xilinx/Vivado/2016.4/ids_lite/ISE/bin/lin64:/home/prabhat/Xilinx/Vivado/2016.4/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=/home/prabhat/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/home/prabhat/Xilinx/Vivado/2016.4/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/media/root/New Volume/IITD/4th/COL 216/Lab/A5/DataPath/DataPath.runs/synth_1'
+HD_PWD='/home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
