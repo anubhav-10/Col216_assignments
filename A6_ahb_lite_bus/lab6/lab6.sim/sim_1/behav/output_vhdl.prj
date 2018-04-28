@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../lab6.srcs/sources_1/imports/A6/output.vhd"
+
+# Do not sort compile order
+nosort

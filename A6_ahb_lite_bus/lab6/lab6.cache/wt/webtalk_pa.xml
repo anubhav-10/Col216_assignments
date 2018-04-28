@@ -3,10 +3,17 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
+<<<<<<< HEAD
 <application name="pa" timeStamp="Sat Apr 28 23:39:13 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="86d3199656654aa2a79f345ab3758e17" type="ProjectID"/>
 <property name="ProjectIteration" value="4" type="ProjectIteration"/>
+=======
+<application name="pa" timeStamp="Fri Apr 27 23:20:06 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="7e3924243a54462398bfbc811bbc36ec" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+>>>>>>> 18e3ddeb8636fb1bc257ef16fef34cc0efb6d6bd
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -18,6 +25,7 @@ This means code written to parse this file will need to be revisited each subseq
 </item>
 <item name="Java Command Handlers">
 <property name="AddSources" value="1" type="JavaHandler"/>
+<<<<<<< HEAD
 <property name="CloseProject" value="4" type="JavaHandler"/>
 <property name="EditDelete" value="1" type="JavaHandler"/>
 <property name="OpenProject" value="2" type="JavaHandler"/>
@@ -75,11 +83,56 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcChooserPanel_ADD_DIRECTORIES" value="2" type="GuiResourceData"/>
 <property name="TaskBanner_CLOSE" value="9" type="GuiResourceData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="11" type="GuiResourceData"/>
+=======
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="8" type="JavaHandler"/>
+<property name="SimulationClose" value="1" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="5" type="JavaHandler"/>
+<property name="SimulationRun" value="6" type="JavaHandler"/>
+<property name="SimulationRunAll" value="6" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="91" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="AbstractFileView_RELOAD" value="5" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="3" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="52" type="GuiResourceData"/>
+<property name="CmdMsgDialog_OK" value="1" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="21" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="15" type="GuiResourceData"/>
+<property name="GettingStartedView_RECENT_PROJECTS" value="1" type="GuiResourceData"/>
+<property name="MainMenuMgr_FILE" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_OPEN_RECENT_PROJECT" value="1" type="GuiResourceData"/>
+<property name="MainToolbarMgr_OPEN" value="1" type="GuiResourceData"/>
+<property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="8" type="GuiResourceData"/>
+<property name="PACommandNames_CLOSE_PROJECT" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_LIVE_RUN" value="97" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_LIVE_RUN_ALL" value="6" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_RELAUNCH" value="5" type="GuiResourceData"/>
+<property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="6" type="GuiResourceData"/>
+<property name="PAViews_CODE" value="6" type="GuiResourceData"/>
+<property name="PAViews_PROJECT_SUMMARY" value="1" type="GuiResourceData"/>
+<property name="ProgressDialog_BACKGROUND" value="2" type="GuiResourceData"/>
+<property name="ProgressDialog_CANCEL" value="1" type="GuiResourceData"/>
+<property name="ProjectSettingsGeneralPage_DEFAULT_LIBRARY" value="1" type="GuiResourceData"/>
+<property name="ProjectSettingsSimulationPanel_SELECT_TESTBENCH_TOP_MODULE" value="5" type="GuiResourceData"/>
+<property name="RDIViews_WAVEFORM_VIEWER" value="1" type="GuiResourceData"/>
+<property name="SelectTopModuleDialog_SELECT_TOP_MODULE" value="10" type="GuiResourceData"/>
+<property name="SimulationForceSettingsDialog_FORCE_VALUE" value="40" type="GuiResourceData"/>
+<property name="SimulationForceSettingsDialog_LEADING_EDGE_VALUE" value="6" type="GuiResourceData"/>
+<property name="SimulationForceSettingsDialog_PERIOD" value="5" type="GuiResourceData"/>
+<property name="SimulationForceSettingsDialog_TRAILING_EDGE_VALUE" value="6" type="GuiResourceData"/>
+<property name="SimulationForceSettingsDialog_VALUE_RADIX" value="1" type="GuiResourceData"/>
+<property name="SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE" value="66" type="GuiResourceData"/>
+<property name="SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE" value="2" type="GuiResourceData"/>
+<property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="1" type="GuiResourceData"/>
+<property name="TaskBanner_CLOSE" value="5" type="GuiResourceData"/>
+<property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="10" type="GuiResourceData"/>
+>>>>>>> 18e3ddeb8636fb1bc257ef16fef34cc0efb6d6bd
 </item>
 <item name="Other">
-<property name="GuiMode" value="51" type="GuiMode"/>
+<property name="GuiMode" value="21" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="46" type="TclMode"/>
+<property name="TclMode" value="16" type="TclMode"/>
 </item>
 </section>
 </application>
