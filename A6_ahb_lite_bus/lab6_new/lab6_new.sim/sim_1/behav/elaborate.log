@@ -48,5 +48,7 @@ Compiling architecture behav of entity xil_defaultlib.mem [mem_default]
 Compiling architecture behav of entity xil_defaultlib.switches [switches_default]
 Compiling architecture behav of entity xil_defaultlib.mux [mux_default]
 Compiling architecture behav of entity xil_defaultlib.output [output_default]
+Compiling architecture behav of entity xil_defaultlib.clock_divider [clock_divider_default]
+Compiling architecture behav of entity xil_defaultlib.ssd [ssd_default]
 Compiling architecture behav of entity xil_defaultlib.buss
 Built simulation snapshot buss_behav

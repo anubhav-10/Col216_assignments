@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524996532">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1525000434">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="buss.drc"/>
   <File Type="BG-BGN" Name="buss.bgn"/>
@@ -248,6 +248,12 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../src/sources_1/imports/Controller/Controller.vhd"/>
         <Attr Name="ImportTime" Val="1524851306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ssd.vhd">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

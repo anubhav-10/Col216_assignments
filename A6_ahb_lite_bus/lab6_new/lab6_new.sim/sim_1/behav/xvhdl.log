@@ -46,6 +46,9 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments
 INFO: [VRFC 10-307] analyzing entity Datapath
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Controller.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Controller
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/new/ssd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clock_divider
+INFO: [VRFC 10-307] analyzing entity ssd
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/output.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity output
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/mux.vhd" into library xil_defaultlib

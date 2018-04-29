@@ -2,8 +2,8 @@
 # Webtalk v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sun Apr 29 00:17:01 2018
-# Process ID: 8912
+# Start of session at: Sun Apr 29 16:03:06 2018
+# Process ID: 8950
 # Current directory: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.sim/sim_1/behav
 # Command line: wbtcv -mode batch -source /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.sim/sim_1/behav/xsim.dir/DC_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.sim/sim_1/behav/webtalk.log

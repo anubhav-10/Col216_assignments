@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Sat Apr 28 18:06:27 2018
+| Date         : Sun Apr 29 16:04:48 2018
 | Host         : prabhat-Lenovo-ideapad-510-15IKB running 64-bit Ubuntu 16.04.4 LTS
 | Command      : report_control_sets -verbose -file DC_control_sets_placed.rpt
 | Design       : DC
@@ -33,11 +33,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              23 |           15 |
+| No           | No                    | No                     |              23 |           14 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               2 |            1 |
-| Yes          | No                    | No                     |             498 |          218 |
-| Yes          | No                    | Yes                    |              64 |           33 |
+| Yes          | No                    | No                     |             498 |          241 |
+| Yes          | No                    | Yes                    |              64 |           34 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -48,36 +48,36 @@ Table of Contents
 +-----------------------------------------------+---------------------------------------------+-------------------+------------------+----------------+
 |                  Clock Signal                 |                Enable Signal                |  Set/Reset Signal | Slice Load Count | Bel Load Count |
 +-----------------------------------------------+---------------------------------------------+-------------------+------------------+----------------+
-|  Ctrl/States/temp_reg[0]_1                    |                                             |                   |                1 |              1 |
-|  Ctrl/States/temp_reg[0]                      |                                             |                   |                1 |              1 |
 |  Ctrl/States/t__0_0                           |                                             |                   |                1 |              1 |
 |  Ctrl/States/rew_tmp                          |                                             |                   |                1 |              1 |
-|  Ctrl/States/registers_reg[2][2]_1            |                                             |                   |                1 |              1 |
-|  Ctrl/States/temp_reg[5]                      |                                             |                   |                1 |              1 |
+|  Ctrl/States/registers_reg[1][21]_0           |                                             |                   |                1 |              1 |
+|  Ctrl/States/registers_reg[0][0]              |                                             |                   |                1 |              1 |
+|  Ctrl/States/temp_reg[0]_0                    |                                             |                   |                1 |              1 |
+|  Ctrl/States/temp_reg[4]                      |                                             |                   |                1 |              1 |
 |  Ctrl/Decode/inscd_reg[1]/G0                  |                                             |                   |                1 |              1 |
 |  Ctrl/States/FSM_sequential_state_reg[3]_0[0] |                                             | Ctrl/States/AS[1] |                1 |              2 |
 |  Ctrl/States/temp_reg[16][0]                  |                                             |                   |                2 |              3 |
-|  Ctrl/Decode/temp_reg[26]_0[0]                |                                             |                   |                2 |              4 |
-|  Ctrl/States/registers_reg[2][2]_0[0]         |                                             |                   |                1 |              4 |
-|  clk_IBUF_BUFG                                | Ctrl/States/FSM_sequential_state[3]_i_1_n_0 |                   |                2 |              4 |
+|  Ctrl/Decode/temp_reg[4]_0[0]                 |                                             |                   |                1 |              4 |
+|  Ctrl/States/registers_reg[1][25]_0[0]        |                                             |                   |                1 |              4 |
+|  clk_IBUF_BUFG                                | Ctrl/States/FSM_sequential_state[3]_i_1_n_0 |                   |                3 |              4 |
 |  Ctrl/Decode/E[0]                             |                                             |                   |                3 |              5 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[14][0][0]         |                   |               12 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[1][0][0]          |                   |               12 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[15][0][0]         | reset_IBUF        |               13 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[8][0][0]          |                   |               14 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[13][0][0]         |                   |               12 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[12][0][0]         |                   |               12 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[11][0]_0[0]       |                   |               14 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[10][0][0]         |                   |               16 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[2][0]_0[0]        |                   |               15 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[3][0][0]          |                   |               13 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[4][0][0]          |                   |               15 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[5][0][0]          |                   |               14 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[6][0][0]          |                   |               16 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[7][0][0]          |                   |               14 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[9][0][0]          |                   |               17 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[13][0][0]             |                   |               14 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[15][0][0]             | reset_IBUF        |               14 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[14][0][0]             |                   |               16 |             32 |
 |  clk_IBUF_BUFG                                | Ctrl/States/E[0]                            | reset_IBUF        |               20 |             32 |
-|  clk_IBUF_BUFG                                | Ctrl/States/registers_reg[0][0]_0[0]        |                   |               20 |             46 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[12][0][0]             |                   |               13 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[11][0][0]             |                   |               16 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[10][0][0]             |                   |               17 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[1][0][0]              |                   |               12 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[2][0][0]              |                   |               15 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[3][0][0]              |                   |               16 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[4][0][0]              |                   |               12 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[5][0][0]              |                   |               15 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[6][0][0]              |                   |               16 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[7][0][0]              |                   |               20 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[8][0][0]              |                   |               17 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[9][0][0]              |                   |               14 |             32 |
+|  clk_IBUF_BUFG                                | Ctrl/MC/registers_reg[0][0]_0[0]            |                   |               25 |             46 |
 +-----------------------------------------------+---------------------------------------------+-------------------+------------------+----------------+
 
 

@@ -87,11 +87,18 @@ port(	clk : in std_logic;
 		hwdata : in std_logic_vector(15 downto 0);
 		
 		hready : out std_logic;
-        out_data : out std_logic_vector(15 downto 0); -- will be mapped to leds
-        cathode : out std_logic_vector(6 downto 0);
-        anode : out std_logic_vector(3 downto 0)
+        out_data : out std_logic_vector(15 downto 0) -- will be mapped to leds
 );
 end component;
+
+component ssd is
+port (  clk : in std_logic;
+        hwdata : in std_logic_vector(15 downto 0);
+        anode : out std_logic_vector(3 downto 0);
+        cathode : out std_logic_Vector(6 downto 0)  
+);
+end component;
+
 
 --wr_en = hwrite
 
@@ -106,6 +113,8 @@ signal state : std_logic_vector(2 downto 0);
 
 signal hrdata1,hrdata2 : std_logic_vector(31 downto 0);
 signal hready1,hready2,hready3 : std_logic;
+
+signal temp_led : std_logic_vector(15 downto 0);
 
 begin
 
@@ -123,6 +132,10 @@ begin
 
 	hready <= hready1 or hready2 or hready3;
 
-	outp: output port map(clk,htrans,led_sel,hwrite,hwdata(15 downto 0),hready3,led,cathode,anode);
+	outp: output port map(clk,htrans,led_sel,hwrite,hwdata(15 downto 0),hready3,temp_led);
+
+    led <= temp_led;
+
+    ssdd : ssd port map(clk,temp_led,anode,cathode);
 
 end behav;

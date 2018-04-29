@@ -41,6 +41,7 @@ read_vhdl -library xil_defaultlib {
   /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/memory2.vhd
   /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/DataPath/Datapath.vhd
   /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Controller.vhd
+  /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/new/ssd.vhd
   /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/output.vhd
   /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/mux.vhd
   /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/switches.vhd

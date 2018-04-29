@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date             : Sun Apr 29 15:41:14 2018
+| Date             : Sun Apr 29 16:46:04 2018
 | Host             : prabhat-Lenovo-ideapad-510-15IKB running 64-bit Ubuntu 16.04.4 LTS
 | Command          : report_power -file buss_power_routed.rpt -pb buss_power_summary_routed.pb -rpx buss_power_routed.rpx
 | Design           : buss
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.114 |
-| Dynamic (W)              | 0.042 |
+| Total On-Chip Power (W)  | 0.118 |
+| Dynamic (W)              | 0.046 |
 | Device Static (W)        | 0.072 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 84.4  |
@@ -50,19 +50,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.014 |     2537 |       --- |             --- |
-|   LUT as Logic |     0.013 |     1516 |     20800 |            7.29 |
-|   CARRY4       |    <0.001 |       59 |      8150 |            0.72 |
+| Slice Logic    |     0.014 |     2615 |       --- |             --- |
+|   LUT as Logic |     0.014 |     1529 |     20800 |            7.35 |
+|   CARRY4       |    <0.001 |       78 |      8150 |            0.96 |
 |   F7/F8 Muxes  |    <0.001 |      135 |     32600 |            0.41 |
-|   Register     |    <0.001 |      667 |     41600 |            1.60 |
+|   Register     |    <0.001 |      709 |     41600 |            1.70 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       31 |       --- |             --- |
-| Signals        |     0.022 |     2365 |       --- |             --- |
+|   Others       |     0.000 |       35 |       --- |             --- |
+| Signals        |     0.021 |     2469 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |        50 |            1.00 |
 | DSPs           |     0.003 |        3 |        90 |            3.33 |
-| I/O            |    <0.001 |       45 |       106 |           42.45 |
+| I/O            |     0.006 |       45 |       106 |           42.45 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.114 |          |           |                 |
+| Total          |     0.118 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.051 |       0.042 |      0.010 |
+| Vccint    |       1.000 |     0.050 |       0.040 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -141,14 +141,14 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| buss                 |     0.042 |
-|   master             |     0.041 |
-|     Ctrl             |     0.026 |
+| buss                 |     0.046 |
+|   master             |     0.039 |
+|     Ctrl             |     0.025 |
 |       Acontrol       |     0.001 |
 |       Bcontrol       |    <0.001 |
 |       Decode         |    <0.001 |
 |         inscd_reg[1] |    <0.001 |
-|       MC             |     0.007 |
+|       MC             |     0.006 |
 |       States         |     0.017 |
 |     DP               |     0.015 |
 |       A_write        |    <0.001 |
@@ -169,6 +169,8 @@ Table of Contents
 |   memory_state       |    <0.001 |
 |   multi              |    <0.001 |
 |   outp               |    <0.001 |
+|   ssdd               |    <0.001 |
+|     clk_div          |    <0.001 |
 |   swit               |    <0.001 |
 +----------------------+-----------+
 
