@@ -18,7 +18,7 @@ begin
     begin
         if(clk='1' and clk'event) then
             count:=count+1;
-            if(count=20) then
+            if(count=20000000) then
                 tmp <= not tmp;
                 count := 1;
             end if;
@@ -60,17 +60,17 @@ begin
     begin
             if(clk_out='1'and clk_out'event) then
             case temp_anode is
-                when "1000" =>
-                    temp_anode<="0100";
+                when "0111" =>
+                    temp_anode<="1011";
                     num <= hwdata(11 downto 8);
-                when "0100" =>
-                    temp_anode<="0010";
+                when "1011" =>
+                    temp_anode<="1101";
                     num <= hwdata(7 downto 4);
-                when "0010" =>
-                    temp_anode<="0001";
+                when "1101" =>
+                    temp_anode<="1110";
                     num <= hwdata(3 downto 0);
                 when others =>
-                    temp_anode<="1000";
+                    temp_anode<="0111";
                     num <= hwdata(15 downto 12);
             end case;
         end if;

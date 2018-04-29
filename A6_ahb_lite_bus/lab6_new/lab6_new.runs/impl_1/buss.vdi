@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Sun Apr 29 16:44:40 2018
-# Process ID: 17219
+# Start of session at: Sun Apr 29 19:24:44 2018
+# Process ID: 21895
 # Current directory: /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1
 # Command line: vivado -log buss.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source buss.tcl -notrace
 # Log file: /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss.vdi
@@ -39,54 +39,54 @@ INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1288.656 ; gain = 53.016 ; free physical = 1550 ; free virtual = 11801
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.59 . Memory (MB): peak = 1288.664 ; gain = 53.016 ; free physical = 1302 ; free virtual = 11340
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: 14c58ca2b
+Implement Debug Cores | Checksum: 1c9cc54a9
 
 Phase 1 Retarget
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 163aee2ff
+Phase 1 Retarget | Checksum: 1cc26ebaf
 
-Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1654.086 ; gain = 0.000 ; free physical = 1202 ; free virtual = 11453
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 953 ; free virtual = 10991
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-10] Eliminated 0 cells.
-Phase 2 Constant propagation | Checksum: 281017b76
+Phase 2 Constant propagation | Checksum: 1f4e94ec4
 
-Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.24 . Memory (MB): peak = 1654.086 ; gain = 0.000 ; free physical = 1201 ; free virtual = 11452
+Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.26 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 952 ; free virtual = 10990
 
 Phase 3 Sweep
 INFO: [Opt 31-12] Eliminated 375 unconnected nets.
 INFO: [Opt 31-11] Eliminated 1 unconnected cells.
-Phase 3 Sweep | Checksum: 1a92a9630
+Phase 3 Sweep | Checksum: 17589a5b4
 
-Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.34 . Memory (MB): peak = 1654.086 ; gain = 0.000 ; free physical = 1201 ; free virtual = 11452
+Time (s): cpu = 00:00:00.40 ; elapsed = 00:00:00.36 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 952 ; free virtual = 10990
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-12] Eliminated 0 unconnected nets.
 INFO: [Opt 31-11] Eliminated 0 unconnected cells.
-Phase 4 BUFG optimization | Checksum: 1c165ac00
+Phase 4 BUFG optimization | Checksum: 17589a5b4
 
-Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.49 . Memory (MB): peak = 1654.086 ; gain = 0.000 ; free physical = 1201 ; free virtual = 11452
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.51 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 952 ; free virtual = 10990
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1654.086 ; gain = 0.000 ; free physical = 1201 ; free virtual = 11452
-Ending Logic Optimization Task | Checksum: 1c165ac00
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 952 ; free virtual = 10990
+Ending Logic Optimization Task | Checksum: 17589a5b4
 
-Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.51 . Memory (MB): peak = 1654.086 ; gain = 0.000 ; free physical = 1201 ; free virtual = 11452
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.53 . Memory (MB): peak = 1654.094 ; gain = 0.000 ; free physical = 952 ; free virtual = 10990
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-203] Number of nets are not same before and after processing of findDistanceFromSourceAndDest. Before: 1142 After: 1485
 
 Finished Running Vector-less Activity Propagation
-INFO: [Pwropt 34-203] Number of nets are not same before and after processing of findDistanceFromSourceAndDest. Before: 621 After: 1205
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
 
@@ -95,21 +95,21 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
-Ending PowerOpt Patch Enables Task | Checksum: 1c165ac00
+Ending PowerOpt Patch Enables Task | Checksum: 17589a5b4
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1138 ; free virtual = 11389
-Ending Power Optimization Task | Checksum: 1c165ac00
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 887 ; free virtual = 10925
+Ending Power Optimization Task | Checksum: 17589a5b4
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.86 . Memory (MB): peak = 1874.188 ; gain = 220.102 ; free physical = 1138 ; free virtual = 11389
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.78 . Memory (MB): peak = 1874.195 ; gain = 220.102 ; free physical = 886 ; free virtual = 10925
 INFO: [Common 17-83] Releasing license: Implementation
 29 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.188 ; gain = 638.547 ; free physical = 1138 ; free virtual = 11389
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1874.195 ; gain = 638.547 ; free physical = 886 ; free virtual = 10925
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1137 ; free virtual = 11389
+Write XDEF Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 885 ; free virtual = 10924
 INFO: [Common 17-1381] The checkpoint '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_opt.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_drc_opted.rpt.
@@ -125,26 +125,26 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 4 threads
 WARNING: [DRC 23-20] Rule violation (CHECK-3) Report rule limit reached - REQP-1840 rule limit reached: 20 violations have been found.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[20]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[23]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[25]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/PC_write/temp_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][20]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][21]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][22]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][23]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][25]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC 23-20] Rule violation (REQP-1840) RAMB18 async control check - The RAMB18E1 memory/MEM_slave/memo_reg has an input control pin memory/MEM_slave/memo_reg/ADDRARDADDR[11] (net: memory/MEM_slave/haddr[6]) which is driven by a register (master/DP/Reg/registers_reg[15][9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
@@ -152,87 +152,87 @@ Starting Placer Task
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1127 ; free virtual = 11379
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1127 ; free virtual = 11379
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 872 ; free virtual = 10911
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 872 ; free virtual = 10911
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a982e023
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: d6610235
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.69 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1126 ; free virtual = 11378
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.77 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 872 ; free virtual = 10911
 
 Phase 1.2 Build Placer Netlist Model
-Phase 1.2 Build Placer Netlist Model | Checksum: 17ab32a34
+Phase 1.2 Build Placer Netlist Model | Checksum: 1a3e21700
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1110 ; free virtual = 11362
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 868 ; free virtual = 10906
 
 Phase 1.3 Constrain Clocks/Macros
-Phase 1.3 Constrain Clocks/Macros | Checksum: 17ab32a34
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1a3e21700
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1110 ; free virtual = 11362
-Phase 1 Placer Initialization | Checksum: 17ab32a34
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 868 ; free virtual = 10906
+Phase 1 Placer Initialization | Checksum: 1a3e21700
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1110 ; free virtual = 11362
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 867 ; free virtual = 10906
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 155ca62e9
+Phase 2 Global Placement | Checksum: 1860b3450
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1109 ; free virtual = 11361
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 155ca62e9
+Phase 3.1 Commit Multi Column Macros | Checksum: 1860b3450
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1109 ; free virtual = 11361
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19c91b2f9
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1858c4121
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1108 ; free virtual = 11360
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 13b362fbe
+Phase 3.3 Area Swap Optimization | Checksum: 117b8c347
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1108 ; free virtual = 11360
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 861 ; free virtual = 10900
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 13b362fbe
+Phase 3.4 Pipeline Register Optimization | Checksum: 117b8c347
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1108 ; free virtual = 11360
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 862 ; free virtual = 10901
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 13920c260
+Phase 3.5 Timing Path Optimizer | Checksum: fd2f2f4e
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1108 ; free virtual = 11360
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 12a5de159
+Phase 3.6 Fast Optimization | Checksum: 19f688153
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1108 ; free virtual = 11360
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 862 ; free virtual = 10901
 
 Phase 3.7 Small Shape Detail Placement
-Phase 3.7 Small Shape Detail Placement | Checksum: 1fa544190
+Phase 3.7 Small Shape Detail Placement | Checksum: 175309d69
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1108 ; free virtual = 11360
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 863 ; free virtual = 10902
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: 1aca47365
+Phase 3.8 Re-assign LUT pins | Checksum: 19f67b714
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1108 ; free virtual = 11360
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 863 ; free virtual = 10902
 
 Phase 3.9 Pipeline Register Optimization
-Phase 3.9 Pipeline Register Optimization | Checksum: 1aca47365
+Phase 3.9 Pipeline Register Optimization | Checksum: 19f67b714
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1108 ; free virtual = 11360
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 863 ; free virtual = 10902
 
 Phase 3.10 Fast Optimization
-Phase 3.10 Fast Optimization | Checksum: 13d245a8f
+Phase 3.10 Fast Optimization | Checksum: 12674a701
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1107 ; free virtual = 11359
-Phase 3 Detail Placement | Checksum: 13d245a8f
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 860 ; free virtual = 10899
+Phase 3 Detail Placement | Checksum: 12674a701
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1107 ; free virtual = 11359
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 860 ; free virtual = 10899
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -240,47 +240,47 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-21.736. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 17ee03138
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-39.433. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 20c982669
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1103 ; free virtual = 11355
-Phase 4.1 Post Commit Optimization | Checksum: 17ee03138
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
+Phase 4.1 Post Commit Optimization | Checksum: 20c982669
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1103 ; free virtual = 11355
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 17ee03138
+Phase 4.2 Post Placement Cleanup | Checksum: 20c982669
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1103 ; free virtual = 11355
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 17ee03138
+Phase 4.3 Placer Reporting | Checksum: 20c982669
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1103 ; free virtual = 11355
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 22b2bfdf5
+Phase 4.4 Final Placement Cleanup | Checksum: 1cad3e5d7
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1103 ; free virtual = 11355
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 22b2bfdf5
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1cad3e5d7
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1103 ; free virtual = 11355
-Ending Placer Task | Checksum: 1a47efb88
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
+Ending Placer Task | Checksum: f4af1373
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:34 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1103 ; free virtual = 11355
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
 INFO: [Common 17-83] Releasing license: Implementation
 45 Infos, 23 Warnings, 1 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:34 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1103 ; free virtual = 11355
+place_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:38 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 865 ; free virtual = 10904
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1099 ; free virtual = 11354
+Write XDEF Complete: Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 861 ; free virtual = 10903
 INFO: [Common 17-1381] The checkpoint '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_placed.dcp' has been generated.
-report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1097 ; free virtual = 11349
-report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1096 ; free virtual = 11349
-report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1096 ; free virtual = 11349
+report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 859 ; free virtual = 10899
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 860 ; free virtual = 10900
+report_control_sets: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 859 ; free virtual = 10899
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -292,208 +292,197 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
-Checksum: PlaceDB: ca7e2c02 ConstDB: 0 ShapeSum: da00cf86 RouteDB: 0
+Checksum: PlaceDB: dbbeaee3 ConstDB: 0 ShapeSum: 18f06490 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: c7dabb18
+Phase 1 Build RT Design | Checksum: 847982ca
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1035 ; free virtual = 11288
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 791 ; free virtual = 10831
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: c7dabb18
+Phase 2.1 Create Timer | Checksum: 847982ca
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1035 ; free virtual = 11288
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 791 ; free virtual = 10831
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: c7dabb18
+Phase 2.2 Fix Topology Constraints | Checksum: 847982ca
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1023 ; free virtual = 11276
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 779 ; free virtual = 10819
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: c7dabb18
+Phase 2.3 Pre Route Cleanup | Checksum: 847982ca
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1023 ; free virtual = 11276
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 779 ; free virtual = 10819
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 232911d55
+Phase 2.4 Update Timing | Checksum: 1d65367bd
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1012 ; free virtual = 11264
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-21.017| TNS=-14258.967| WHS=-0.080 | THS=-0.629 |
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 765 ; free virtual = 10805
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-38.527| TNS=-34282.430| WHS=-0.089 | THS=-0.946 |
 
-Phase 2 Router Initialization | Checksum: 1eb0059a6
+Phase 2 Router Initialization | Checksum: 1c2c16691
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1011 ; free virtual = 11264
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 765 ; free virtual = 10805
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 29e29240c
+Phase 3 Initial Routing | Checksum: 18886c47a
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1009 ; free virtual = 11262
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 764 ; free virtual = 10804
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 771
- Number of Nodes with overlaps = 92
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 708
+ Number of Nodes with overlaps = 46
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 102d775c2
+Phase 4.1.1 Update Timing | Checksum: 6b80642f
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1008 ; free virtual = 11261
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-22.295| TNS=-15904.832| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-38.197| TNS=-33961.738| WHS=N/A    | THS=N/A    |
 
 
 Phase 4.1.2 GlobIterForTiming
 
 Phase 4.1.2.1 Update Timing
-Phase 4.1.2.1 Update Timing | Checksum: 17187d78e
+Phase 4.1.2.1 Update Timing | Checksum: 15e94be95
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1008 ; free virtual = 11261
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
 
 Phase 4.1.2.2 Fast Budgeting
-Phase 4.1.2.2 Fast Budgeting | Checksum: cd1b139c
+Phase 4.1.2.2 Fast Budgeting | Checksum: 1832be592
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1008 ; free virtual = 11261
-Phase 4.1.2 GlobIterForTiming | Checksum: 1b44c47c0
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+Phase 4.1.2 GlobIterForTiming | Checksum: 242b45a24
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1008 ; free virtual = 11261
-Phase 4.1 Global Iteration 0 | Checksum: 1b44c47c0
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+Phase 4.1 Global Iteration 0 | Checksum: 242b45a24
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1008 ; free virtual = 11261
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 12
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 
 Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: 1b24bad88
+Phase 4.2.1 Update Timing | Checksum: 1501146d1
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11256
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-21.844| TNS=-15649.613| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-36.821| TNS=-33095.824| WHS=N/A    | THS=N/A    |
 
 
 Phase 4.2.2 GlobIterForTiming
 
 Phase 4.2.2.1 Update Timing
-Phase 4.2.2.1 Update Timing | Checksum: 24038b2c6
+Phase 4.2.2.1 Update Timing | Checksum: 1fbe37a11
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11256
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
 
 Phase 4.2.2.2 Fast Budgeting
-Phase 4.2.2.2 Fast Budgeting | Checksum: 28ec417c7
+Phase 4.2.2.2 Fast Budgeting | Checksum: 2752e1f02
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11256
-Phase 4.2.2 GlobIterForTiming | Checksum: 29225d8aa
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+Phase 4.2.2 GlobIterForTiming | Checksum: 2777e6b06
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11256
-Phase 4.2 Global Iteration 1 | Checksum: 29225d8aa
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+Phase 4.2 Global Iteration 1 | Checksum: 2777e6b06
 
-Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11256
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
 
 Phase 4.3 Global Iteration 2
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 
 Phase 4.3.1 Update Timing
-Phase 4.3.1 Update Timing | Checksum: 10c663746
+Phase 4.3.1 Update Timing | Checksum: 1b5f4aced
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1004 ; free virtual = 11256
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-21.544| TNS=-15478.203| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-36.576| TNS=-32895.977| WHS=N/A    | THS=N/A    |
 
 
 Phase 4.3.2 GlobIterForTiming
 
 Phase 4.3.2.1 Update Timing
-Phase 4.3.2.1 Update Timing | Checksum: faccd9a9
+Phase 4.3.2.1 Update Timing | Checksum: 20d237974
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1004 ; free virtual = 11256
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
 
 Phase 4.3.2.2 Fast Budgeting
-Phase 4.3.2.2 Fast Budgeting | Checksum: f9df2f20
+Phase 4.3.2.2 Fast Budgeting | Checksum: 265c5b447
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1004 ; free virtual = 11256
-Phase 4.3.2 GlobIterForTiming | Checksum: 1859a20f6
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+Phase 4.3.2 GlobIterForTiming | Checksum: 267c785cf
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1004 ; free virtual = 11256
-Phase 4.3 Global Iteration 2 | Checksum: 1859a20f6
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+Phase 4.3 Global Iteration 2 | Checksum: 267c785cf
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:16 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1004 ; free virtual = 11256
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
 
 Phase 4.4 Global Iteration 3
- Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 
 Phase 4.4.1 Update Timing
-Phase 4.4.1 Update Timing | Checksum: 12b27662a
+Phase 4.4.1 Update Timing | Checksum: 1e605074f
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11256
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-21.623| TNS=-15514.929| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-36.327| TNS=-32791.469| WHS=N/A    | THS=N/A    |
 
-Phase 4.4 Global Iteration 3 | Checksum: f6415d86
+Phase 4.4 Global Iteration 3 | Checksum: 1cf7a78c4
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11256
-Phase 4 Rip-up And Reroute | Checksum: f6415d86
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+Phase 4 Rip-up And Reroute | Checksum: 1cf7a78c4
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11256
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1be03b489
+Phase 5.1.1 Update Timing | Checksum: 1aced65fc
 
-Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 1003 ; free virtual = 11256
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-21.544| TNS=-15392.197| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 763 ; free virtual = 10803
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-36.248| TNS=-32741.799| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 19a97e1a2
+Phase 5.1 Delay CleanUp | Checksum: 21d250f52
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 755 ; free virtual = 10795
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 19a97e1a2
+Phase 5.2 Clock Skew Optimization | Checksum: 21d250f52
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
-Phase 5 Delay and Skew Optimization | Checksum: 19a97e1a2
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 755 ; free virtual = 10795
+Phase 5 Delay and Skew Optimization | Checksum: 21d250f52
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:17 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 755 ; free virtual = 10795
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1afb9db3e
+Phase 6.1.1 Update Timing | Checksum: 2a3c38a54
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-21.346| TNS=-15289.096| WHS=0.214  | THS=0.000  |
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 754 ; free virtual = 10794
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-36.230| TNS=-32730.885| WHS=0.154  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 1afb9db3e
+Phase 6.1 Hold Fix Iter | Checksum: 2a3c38a54
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
-Phase 6 Post Hold Fix | Checksum: 1afb9db3e
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 754 ; free virtual = 10794
+Phase 6 Post Hold Fix | Checksum: 2a3c38a54
 
-Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 754 ; free virtual = 10794
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.173 %
-  Global Horizontal Routing Utilization  = 1.64276 %
+  Global Vertical Routing Utilization    = 1.14183 %
+  Global Horizontal Routing Utilization  = 1.64498 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -503,54 +492,55 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 57.6577%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 46.8468%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 77.9412%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 58.8235%, No Congested Regions.
-Phase 7 Route finalize | Checksum: 1b5a340be
+North Dir 1x1 Area, Max Cong = 44.1441%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 75.6757%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 83.8235%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 66.1765%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 22eca4b83
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 754 ; free virtual = 10794
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1b5a340be
+Phase 8 Verifying routed nets | Checksum: 22eca4b83
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 754 ; free virtual = 10794
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 232d94fef
+Phase 9 Depositing Routes | Checksum: 1aaba3c83
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 754 ; free virtual = 10794
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-21.346| TNS=-15289.096| WHS=0.214  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-36.230| TNS=-32730.885| WHS=0.154  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 232d94fef
+Phase 10 Post Router Timing | Checksum: 1aaba3c83
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 754 ; free virtual = 10794
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 1874.188 ; gain = 0.000 ; free physical = 977 ; free virtual = 11230
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 1874.195 ; gain = 0.000 ; free physical = 754 ; free virtual = 10794
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 61 Infos, 24 Warnings, 1 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:19 . Memory (MB): peak = 1898.121 ; gain = 23.934 ; free physical = 977 ; free virtual = 11230
+route_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:21 . Memory (MB): peak = 1880.129 ; gain = 5.934 ; free physical = 754 ; free virtual = 10794
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.67 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1905.980 ; gain = 0.000 ; free physical = 973 ; free virtual = 11230
+Write XDEF Complete: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.23 . Memory (MB): peak = 1887.988 ; gain = 0.000 ; free physical = 746 ; free virtual = 10791
 INFO: [Common 17-1381] The checkpoint '/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_routed.dcp' has been generated.
 INFO: [DRC 23-27] Running DRC with 4 threads
 INFO: [Coretcl 2-168] The results of DRC are in file /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_drc_routed.rpt.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 4 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.runs/impl_1/buss_methodology_drc_routed.rpt.
+report_methodology: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1895.992 ; gain = 0.000 ; free physical = 748 ; free virtual = 10791
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
@@ -592,19 +582,19 @@ WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP master
 WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP master/DP/Mult/t__1 multiplier stage master/DP/Mult/t__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/FSM_sequential_state[1]_i_2.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/FSM_sequential_state[1]_i_3.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/i__i_1.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/i__i_3.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/inscd_reg[0]_i_4.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/inscd_reg[0]_i_6.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/inscd_reg[2]_i_6.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/inscd_reg[2]_i_9.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/memo_reg_i_2.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/memo_reg_i_3.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/memo_reg_i_4.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/memo_reg_i_5.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/memo_reg_i_6.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/memo_reg_i_7.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/memo_reg_i_8.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/op_reg[0]_i_2.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/op_reg[2]_i_2.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/op_reg[3]_i_3.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/p_reg_i_4.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/p_reg_i_6.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/p_reg_i_8.
@@ -629,10 +619,13 @@ WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT c
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][28]_i_4.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][29]_i_4.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][30]_i_4.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][31]_i_10.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][31]_i_14.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/registers[0][9]_i_4.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/result_reg[0]_i_4.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/result_reg[2]_i_4.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/result_reg[1]_i_2.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/result_reg[1]_i_4.
+WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/result_reg[3]_i_5.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t__0_i_1.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t__0_i_10.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t__0_i_11.
@@ -673,11 +666,8 @@ WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT c
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_14.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_15.
 WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_16.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_17.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_18.
-WARNING: [DRC 23-20] Rule violation (LUTLP-1) Combinatorial Loop Alert - 1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any net in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [net_nets <myHier/myNet>'. The cells in the loop are: master/Ctrl/States/t_i_19.
 INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 271 Warnings
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 268 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 Loading data files...
 Loading site data...
@@ -691,6 +681,6 @@ INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK 
 INFO: [Common 17-83] Releasing license: Implementation
 80 Infos, 124 Warnings, 2 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2239.648 ; gain = 285.633 ; free physical = 640 ; free virtual = 10900
+write_bitstream: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2239.688 ; gain = 283.629 ; free physical = 397 ; free virtual = 10444
 INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file buss.hwdef
-INFO: [Common 17-206] Exiting Vivado at Sun Apr 29 16:46:14 2018...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 29 19:26:29 2018...

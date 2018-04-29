@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Apr 29 17:03:57 2018
+# Process ID: 25738
+# Current directory: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.sim/sim_1/behav/xsim.dir/DC_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.sim/sim_1/behav/webtalk.log
+# Journal file: /home/prabhat/COL216/Col216_assignments/A4_A5_datapath controller/DataPath_vivado_project/DataPath.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /home/prabhat/COL216/Col216_assignments/A4_A5_datapath -notrace
+invalid command name "Proxy=http://www.cc.iitd.ac.in/cgi-bin/proxy.dual:8080"
+    while executing
+"Proxy=http://www.cc.iitd.ac.in/cgi-bin/proxy.dual:8080"
+    (file "/home/prabhat/COL216/Col216_assignments/A4_A5_datapath" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 29 17:03:57 2018...
