@@ -1,64 +1,64 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Memory.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Memory
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/writer_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/writer_4bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity writer_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/writer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/writer.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity writer
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/shift.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/shift.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Shifter
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/regF.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/regF.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity regF
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/PMpath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/PMpath.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity PMpath
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/pc_writer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/pc_writer.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity pc_writer
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/NextState.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/NextState.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity NextState
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/mux_5_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/mux_5_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mux_5_1
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_4_1_5bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mux_4_1_5bit
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/mux_4_1_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/mux_4_1_4bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mux_4_1_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_3_1_4bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mux_3_1_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/mux_3_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/mux_3_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mux_3_1
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_2_1_4bit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mux_2_1_4bit
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/mux_2_1.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mux_2_1
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/Multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/Multiplier.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Multiplier
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/MainControl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/MainControl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity MainControl
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Decoder.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Decoder
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Bctrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Bctrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Bctrl
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Lab4_comp_done/ALU.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity ALU
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Actrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Actrl.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Actrl
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/memory2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/memory2.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Memory2
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/DataPath/Datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/DataPath/Datapath.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Datapath
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/imports/Controller/Controller.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Controller
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/output.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/output.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity output
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/mux.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mux
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/switches.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/switches.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity switches
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/mem_state.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/mem_state.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mem_state
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/mem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/mem.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mem
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/D+C.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/sources_1/new/D+C.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity DC
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/decoder_bus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/decoder_bus.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity decoder_bus
-INFO: [VRFC 10-163] Analyzing VHDL file "/root/github/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/bus.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/prabhat/COL216/Col216_assignments/A6_ahb_lite_bus/lab6_new/lab6_new.srcs/sources_1/imports/src/A6/bus.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity buss

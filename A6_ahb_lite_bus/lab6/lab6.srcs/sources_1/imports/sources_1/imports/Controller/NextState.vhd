@@ -83,9 +83,9 @@ begin
 				when "1110" => if(ready = '0') then
 				                    state <= "1110";
 				               elsif (ins(20) = '1') then
-				                    state <= "1001";
+				                    state <= "1010";
 				               elsif (ins(20) = '0') then
-				                    state <= "1000";
+				                    state <= "0000";
 				               end if;
 				
 				when "1011" => state <= "1100";

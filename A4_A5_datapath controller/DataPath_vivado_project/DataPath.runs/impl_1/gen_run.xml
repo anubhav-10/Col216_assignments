@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1524918883">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="BG-DRC" Name="DC.drc"/>
-  <File Type="BG-BGN" Name="DC.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="DC.sysdef"/>
-  <File Type="BITSTR-MMI" Name="DC.mmi"/>
-  <File Type="BITSTR-BMM" Name="DC_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="DC.nky"/>
-  <File Type="BITSTR-RBT" Name="DC.rbt"/>
-  <File Type="BITSTR-MSK" Name="DC.msk"/>
-  <File Type="BG-BIN" Name="DC.bin"/>
-  <File Type="BG-BIT" Name="DC.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="DC_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="DC_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="DC_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="DC_postroute_physopt_bb.dcp"/>
+  <File Type="PA-TCL" Name="DC.tcl"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="DC_postplace_pwropt.dcp"/>
+  <File Type="INIT-TIMING" Name="DC_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="DC_opt.dcp"/>
+  <File Type="OPT-DRC" Name="DC_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="DC_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="DC.hwdef"/>
+  <File Type="OPT-TIMING" Name="DC_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="DC_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="DC_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="DC_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="DC_placed.dcp"/>
+  <File Type="PLACE-IO" Name="DC_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="DC_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="DC_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="DC_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="DC_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="DC_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="DC_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="DC_timing_summary_placed.rpt"/>
+  <File Type="RDI-RDI" Name="DC.vdi"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="DC_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="DC_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="DC_drc_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="DC_postroute_physopt.dcp"/>
-  <File Type="ROUTE-CLK" Name="DC_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="DC_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="DC_timing_summary_routed.rpx"/>
+  <File Type="BG-BIT" Name="DC.bit"/>
+  <File Type="ROUTE-DCP" Name="DC_routed.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="DC_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIN" Name="DC.bin"/>
   <File Type="ROUTE-TIMING-PB" Name="DC_timing_summary_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="DC_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-MSK" Name="DC.msk"/>
+  <File Type="ROUTE-TIMING-RPX" Name="DC_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-RBT" Name="DC.rbt"/>
+  <File Type="ROUTE-SIMILARITY" Name="DC_incremental_reuse_routed.rpt"/>
+  <File Type="BITSTR-NKY" Name="DC.nky"/>
+  <File Type="ROUTE-CLK" Name="DC_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="DC_postroute_physopt_bb.dcp"/>
+  <File Type="BG-DRC" Name="DC.drc"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="DC_routed_bb.dcp"/>
+  <File Type="BITSTR-MMI" Name="DC.mmi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="DC_timing_summary_postroute_physopted.rpt"/>
+  <File Type="BG-BGN" Name="DC.bgn"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="DC_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="DC.sysdef"/>
+  <File Type="BITSTR-BMM" Name="DC_bd.bmm"/>
   <File Type="ROUTE-STATUS-PB" Name="DC_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="DC_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="DC_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="DC_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="DC_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="DC_methodology_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="DC_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="DC_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-PWR" Name="DC_power_routed.rpt"/>
   <File Type="ROUTE-DRC-RPX" Name="DC_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="DC_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-PB" Name="DC_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="DC_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-DRC" Name="DC_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="DC_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="DC_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="DC_routed_error.dcp"/>
   <File Type="PHYSOPT-TIMING" Name="DC_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="DC_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="DC_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="DC_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="RDI-RDI" Name="DC.vdi"/>
-  <File Type="PLACE-TIMING" Name="DC_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="DC_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="DC_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="DC_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="DC_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="DC_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="DC_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="DC_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="DC_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="DC_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="DC_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="DC_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="DC_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="DC.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="DC_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="DC_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="DC_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="DC_timing_summary_init.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="DC_postplace_pwropt.dcp"/>
-  <File Type="PA-TCL" Name="DC.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/pc_writer.vhd">
