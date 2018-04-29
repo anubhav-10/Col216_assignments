@@ -14,7 +14,7 @@ begin
 	begin
 		if(sel="00") then result<=operand1;
 		elsif(sel="01") then result<=operand2;
-		else result<=operand3;
+		elsif(sel="10") then result<=operand3;
 		end if;
 	end process;
 end behav;
